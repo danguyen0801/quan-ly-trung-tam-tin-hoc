@@ -1,0 +1,14 @@
+C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\bin\Debug\QuanlyTrungTam.exe.config
+C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\bin\Debug\QuanlyTrungTam.exe
+C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\bin\Debug\QuanlyTrungTam.pdb
+C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csprojAssemblyReference.cache
+C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Properties.Resources.resources
+C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csproj.GenerateResource.cache
+C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csproj.CopyComplete
+C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.exe
+C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.pdb
+C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Login.resources
+C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Inf_Check.resources
+C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Student.resources
