@@ -56,6 +56,12 @@
     <Compile Include="Inf_Check.Designer.cs">
       <DependentUpon>Inf_Check.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inf_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inf_Edit.Designer.cs">
+      <DependentUpon>Inf_Edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,8 +76,17 @@
     <Compile Include="Student.Designer.cs">
       <DependentUpon>Student.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student_Inf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Inf.Designer.cs">
+      <DependentUpon>Student_Inf.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Inf_Check.resx">
       <DependentUpon>Inf_Check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inf_Edit.resx">
+      <DependentUpon>Inf_Edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -88,6 +103,9 @@
     </Compile>
     <EmbeddedResource Include="Student.resx">
       <DependentUpon>Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Inf.resx">
+      <DependentUpon>Student_Inf.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

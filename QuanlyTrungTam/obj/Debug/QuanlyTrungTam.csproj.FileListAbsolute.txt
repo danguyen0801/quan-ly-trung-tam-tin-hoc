@@ -12,3 +12,4 @@ C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrung
 C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Login.resources
 C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Inf_Check.resources
 C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Student.resources
+C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Inf_Edit.resources
