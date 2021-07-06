@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.logo = new System.Windows.Forms.PictureBox();
-            this.DKMH_Button = new System.Windows.Forms.Button();
-            this.DKTL_Button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.TCTT_Button = new System.Windows.Forms.Button();
+            this.DKTL_Button = new System.Windows.Forms.Button();
+            this.DKMH_Button = new System.Windows.Forms.Button();
+            this.logo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
@@ -52,46 +52,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1041, 464);
             this.panel1.TabIndex = 1;
-            // 
-            // logo
-            // 
-            this.logo.Image = global::QuanlyTrungTam.Properties.Resources.student;
-            this.logo.Location = new System.Drawing.Point(12, 12);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(368, 438);
-            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logo.TabIndex = 0;
-            this.logo.TabStop = false;
-            // 
-            // DKMH_Button
-            // 
-            this.DKMH_Button.BackColor = System.Drawing.Color.DarkCyan;
-            this.DKMH_Button.BackgroundImage = global::QuanlyTrungTam.Properties.Resources.bookshelf;
-            this.DKMH_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DKMH_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DKMH_Button.Location = new System.Drawing.Point(386, 138);
-            this.DKMH_Button.Name = "DKMH_Button";
-            this.DKMH_Button.Size = new System.Drawing.Size(195, 230);
-            this.DKMH_Button.TabIndex = 1;
-            this.DKMH_Button.Text = "Đăng ký môn học";
-            this.DKMH_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.DKMH_Button.UseVisualStyleBackColor = false;
-            this.DKMH_Button.Click += new System.EventHandler(this.DKMH_Button_Click);
-            // 
-            // DKTL_Button
-            // 
-            this.DKTL_Button.BackColor = System.Drawing.Color.DarkCyan;
-            this.DKTL_Button.BackgroundImage = global::QuanlyTrungTam.Properties.Resources.note;
-            this.DKTL_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DKTL_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DKTL_Button.Location = new System.Drawing.Point(625, 138);
-            this.DKTL_Button.Name = "DKTL_Button";
-            this.DKTL_Button.Size = new System.Drawing.Size(176, 230);
-            this.DKTL_Button.TabIndex = 2;
-            this.DKTL_Button.Text = "Đăng ký thi lại";
-            this.DKTL_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.DKTL_Button.UseVisualStyleBackColor = false;
-            this.DKTL_Button.Click += new System.EventHandler(this.DKTL_Button_Click);
             // 
             // label1
             // 
@@ -118,6 +78,47 @@
             this.TCTT_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.TCTT_Button.UseVisualStyleBackColor = false;
             this.TCTT_Button.Click += new System.EventHandler(this.TCTT_Button_Click);
+            // 
+            // DKTL_Button
+            // 
+            this.DKTL_Button.BackColor = System.Drawing.Color.DarkCyan;
+            this.DKTL_Button.BackgroundImage = global::QuanlyTrungTam.Properties.Resources.note;
+            this.DKTL_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DKTL_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DKTL_Button.Location = new System.Drawing.Point(625, 138);
+            this.DKTL_Button.Name = "DKTL_Button";
+            this.DKTL_Button.Size = new System.Drawing.Size(176, 230);
+            this.DKTL_Button.TabIndex = 2;
+            this.DKTL_Button.Text = "Đăng ký thi lại";
+            this.DKTL_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.DKTL_Button.UseVisualStyleBackColor = false;
+            this.DKTL_Button.Click += new System.EventHandler(this.DKTL_Button_Click);
+            // 
+            // DKMH_Button
+            // 
+            this.DKMH_Button.BackColor = System.Drawing.Color.DarkCyan;
+            this.DKMH_Button.BackgroundImage = global::QuanlyTrungTam.Properties.Resources.bookshelf;
+            this.DKMH_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DKMH_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DKMH_Button.Location = new System.Drawing.Point(386, 138);
+            this.DKMH_Button.Name = "DKMH_Button";
+            this.DKMH_Button.Size = new System.Drawing.Size(195, 230);
+            this.DKMH_Button.TabIndex = 1;
+            this.DKMH_Button.Text = "Đăng ký môn học";
+            this.DKMH_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.DKMH_Button.UseVisualStyleBackColor = false;
+            this.DKMH_Button.Click += new System.EventHandler(this.DKMH_Button_Click);
+            // 
+            // logo
+            // 
+            this.logo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.logo.Image = global::QuanlyTrungTam.Properties.Resources.student;
+            this.logo.Location = new System.Drawing.Point(0, 0);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(368, 464);
+            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logo.TabIndex = 0;
+            this.logo.TabStop = false;
             // 
             // Student
             // 

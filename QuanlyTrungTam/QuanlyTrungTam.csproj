@@ -82,6 +82,18 @@
     <Compile Include="Student_Inf.Designer.cs">
       <DependentUpon>Student_Inf.cs</DependentUpon>
     </Compile>
+    <Compile Include="Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher.Designer.cs">
+      <DependentUpon>Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teaching-staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teaching-staff.Designer.cs">
+      <DependentUpon>Teaching-staff.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Inf_Check.resx">
       <DependentUpon>Inf_Check.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +118,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Student_Inf.resx">
       <DependentUpon>Student_Inf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher.resx">
+      <DependentUpon>Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teaching-staff.resx">
+      <DependentUpon>Teaching-staff.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -152,6 +170,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\score-input.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teaching-staff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\licensing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
