@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,6 +51,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fDKthilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDKthilai.Designer.cs">
+      <DependentUpon>fDKthilai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLocmon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLocmon.Designer.cs">
+      <DependentUpon>fLocmon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThuhocphi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThuhocphi.Designer.cs">
+      <DependentUpon>fThuhocphi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inf_Check.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,18 +101,21 @@
     <Compile Include="Student_Inf.Designer.cs">
       <DependentUpon>Student_Inf.cs</DependentUpon>
     </Compile>
-    <Compile Include="Teacher.cs">
+    <Compile Include="đăng kí học.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Teacher.Designer.cs">
-      <DependentUpon>Teacher.cs</DependentUpon>
+    <Compile Include="đăng kí học.Designer.cs">
+      <DependentUpon>đăng kí học.cs</DependentUpon>
     </Compile>
-    <Compile Include="Teaching-staff.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Teaching-staff.Designer.cs">
-      <DependentUpon>Teaching-staff.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="fDKthilai.resx">
+      <DependentUpon>fDKthilai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLocmon.resx">
+      <DependentUpon>fLocmon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThuhocphi.resx">
+      <DependentUpon>fThuhocphi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inf_Check.resx">
       <DependentUpon>Inf_Check.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,11 +141,8 @@
     <EmbeddedResource Include="Student_Inf.resx">
       <DependentUpon>Student_Inf.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Teacher.resx">
-      <DependentUpon>Teacher.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Teaching-staff.resx">
-      <DependentUpon>Teaching-staff.cs</DependentUpon>
+    <EmbeddedResource Include="đăng kí học.resx">
+      <DependentUpon>đăng kí học.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -172,19 +191,22 @@
     <None Include="Resources\student.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\teacher.jpg" />
+    <None Include="Resources\tải xuống.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\score-input.png" />
+    <None Include="Resources\thongbao.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\teaching-staff.jpg" />
+    <None Include="Resources\thongbao1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\licensing.png" />
+    <None Include="Resources\tải xuống.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\register.png" />
+    <None Include="Resources\tải xuống1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mess.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

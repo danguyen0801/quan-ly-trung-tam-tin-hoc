@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanlyTrungTam
 {
-    public partial class Student_Inf : Form
+    public partial class fThuhocphi : Form
     {
-        public Student_Inf()
+        public fThuhocphi()
         {
             InitializeComponent();
-        }
-
-        private void Fee_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
