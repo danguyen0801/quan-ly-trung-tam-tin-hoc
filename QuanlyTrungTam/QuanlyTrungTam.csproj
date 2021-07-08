@@ -88,6 +88,24 @@
     <Compile Include="Teacher.Designer.cs">
       <DependentUpon>Teacher.cs</DependentUpon>
     </Compile>
+    <Compile Include="Teacher_Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher_Calendar.Designer.cs">
+      <DependentUpon>Teacher_Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_Point.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher_Point.Designer.cs">
+      <DependentUpon>Teacher_Point.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teaching-staff-set-infoStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teaching-staff-set-infoStudent.Designer.cs">
+      <DependentUpon>Teaching-staff-set-infoStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Teaching-staff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +139,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher.resx">
       <DependentUpon>Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_Calendar.resx">
+      <DependentUpon>Teacher_Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_Point.resx">
+      <DependentUpon>Teacher_Point.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teaching-staff-set-infoStudent.resx">
+      <DependentUpon>Teaching-staff-set-infoStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Teaching-staff.resx">
       <DependentUpon>Teaching-staff.cs</DependentUpon>
@@ -185,6 +212,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BUS\" />
+    <Folder Include="DAO\Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
