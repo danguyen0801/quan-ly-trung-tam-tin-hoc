@@ -103,9 +103,9 @@ namespace QuanlyTrungTam.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo {
+        internal static System.Drawing.Bitmap licensing {
             get {
-                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                object obj = ResourceManager.GetObject("licensing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace QuanlyTrungTam.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap mess {
+        internal static System.Drawing.Bitmap logo {
             get {
-                object obj = ResourceManager.GetObject("mess", resourceCulture);
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,6 +143,16 @@ namespace QuanlyTrungTam.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap register {
+            get {
+                object obj = ResourceManager.GetObject("register", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap schedule {
             get {
                 object obj = ResourceManager.GetObject("schedule", resourceCulture);
@@ -156,6 +166,16 @@ namespace QuanlyTrungTam.Properties {
         internal static System.Drawing.Bitmap score {
             get {
                 object obj = ResourceManager.GetObject("score", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap score_input {
+            get {
+                object obj = ResourceManager.GetObject("score-input", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +203,9 @@ namespace QuanlyTrungTam.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tải_xuống {
+        internal static System.Drawing.Bitmap teacher {
             get {
-                object obj = ResourceManager.GetObject("tải xuống", resourceCulture);
+                object obj = ResourceManager.GetObject("teacher", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,39 +213,9 @@ namespace QuanlyTrungTam.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tải_xuống1 {
+        internal static System.Drawing.Bitmap teaching_staff {
             get {
-                object obj = ResourceManager.GetObject("tải xuống1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tải_xuống2 {
-            get {
-                object obj = ResourceManager.GetObject("tải xuống2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap thongbao {
-            get {
-                object obj = ResourceManager.GetObject("thongbao", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap thongbao1 {
-            get {
-                object obj = ResourceManager.GetObject("thongbao1", resourceCulture);
+                object obj = ResourceManager.GetObject("teaching-staff", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

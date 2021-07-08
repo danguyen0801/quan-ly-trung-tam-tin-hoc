@@ -16,10 +16,5 @@ namespace QuanlyTrungTam
         {
             InitializeComponent();
         }
-
-        private void Fee_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

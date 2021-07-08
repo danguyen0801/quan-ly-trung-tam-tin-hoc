@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace QuanlyTrungTam
 {
-    public partial class fDKthilai : Form
+    public partial class Teaching_staff : Form
     {
-        public fDKthilai()
+        public Teaching_staff()
         {
             InitializeComponent();
         }
 
-        private void fDKthilai_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TCTT_Button_Click(object sender, EventArgs e)
         {
 
         }

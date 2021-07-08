@@ -35,11 +35,6 @@
             this.Inf_Button = new System.Windows.Forms.Button();
             this.Semester_Button = new System.Windows.Forms.Button();
             this.Fee_Button = new System.Windows.Forms.Button();
-            this.Scores = new System.Windows.Forms.PictureBox();
-            this.Semester = new System.Windows.Forms.PictureBox();
-            this.Fee = new System.Windows.Forms.PictureBox();
-            this.Information = new System.Windows.Forms.PictureBox();
-            this.Schedule = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txbEmail = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -55,6 +50,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.Scores = new System.Windows.Forms.PictureBox();
+            this.Semester = new System.Windows.Forms.PictureBox();
+            this.Fee = new System.Windows.Forms.PictureBox();
+            this.Information = new System.Windows.Forms.PictureBox();
+            this.Schedule = new System.Windows.Forms.PictureBox();
             this.Update_Button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -149,62 +149,6 @@
             this.Fee_Button.TabIndex = 6;
             this.Fee_Button.Text = "Học phí";
             this.Fee_Button.UseVisualStyleBackColor = false;
-            // 
-            // Scores
-            // 
-            this.Scores.Image = global::QuanlyTrungTam.Properties.Resources.score;
-            this.Scores.Location = new System.Drawing.Point(666, 0);
-            this.Scores.Margin = new System.Windows.Forms.Padding(4);
-            this.Scores.Name = "Scores";
-            this.Scores.Size = new System.Drawing.Size(70, 70);
-            this.Scores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Scores.TabIndex = 3;
-            this.Scores.TabStop = false;
-            // 
-            // Semester
-            // 
-            this.Semester.Image = global::QuanlyTrungTam.Properties.Resources.semester;
-            this.Semester.Location = new System.Drawing.Point(542, 0);
-            this.Semester.Margin = new System.Windows.Forms.Padding(4);
-            this.Semester.Name = "Semester";
-            this.Semester.Size = new System.Drawing.Size(70, 70);
-            this.Semester.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Semester.TabIndex = 2;
-            this.Semester.TabStop = false;
-            // 
-            // Fee
-            // 
-            this.Fee.Image = global::QuanlyTrungTam.Properties.Resources.charge;
-            this.Fee.Location = new System.Drawing.Point(413, 0);
-            this.Fee.Margin = new System.Windows.Forms.Padding(4);
-            this.Fee.Name = "Fee";
-            this.Fee.Size = new System.Drawing.Size(70, 70);
-            this.Fee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Fee.TabIndex = 1;
-            this.Fee.TabStop = false;
-            this.Fee.Click += new System.EventHandler(this.Fee_Click);
-            // 
-            // Information
-            // 
-            this.Information.Image = global::QuanlyTrungTam.Properties.Resources.information;
-            this.Information.Location = new System.Drawing.Point(245, 0);
-            this.Information.Margin = new System.Windows.Forms.Padding(4);
-            this.Information.Name = "Information";
-            this.Information.Size = new System.Drawing.Size(70, 70);
-            this.Information.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Information.TabIndex = 1;
-            this.Information.TabStop = false;
-            // 
-            // Schedule
-            // 
-            this.Schedule.Image = global::QuanlyTrungTam.Properties.Resources.schedule;
-            this.Schedule.Location = new System.Drawing.Point(64, 0);
-            this.Schedule.Margin = new System.Windows.Forms.Padding(4);
-            this.Schedule.Name = "Schedule";
-            this.Schedule.Size = new System.Drawing.Size(70, 70);
-            this.Schedule.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Schedule.TabIndex = 0;
-            this.Schedule.TabStop = false;
             // 
             // label1
             // 
@@ -328,6 +272,61 @@
             this.label2.Size = new System.Drawing.Size(84, 17);
             this.label2.TabIndex = 19;
             this.label2.Text = "Mã học viên";
+            // 
+            // Scores
+            // 
+            this.Scores.Image = global::QuanlyTrungTam.Properties.Resources.score;
+            this.Scores.Location = new System.Drawing.Point(666, 0);
+            this.Scores.Margin = new System.Windows.Forms.Padding(4);
+            this.Scores.Name = "Scores";
+            this.Scores.Size = new System.Drawing.Size(70, 70);
+            this.Scores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Scores.TabIndex = 3;
+            this.Scores.TabStop = false;
+            // 
+            // Semester
+            // 
+            this.Semester.Image = global::QuanlyTrungTam.Properties.Resources.semester;
+            this.Semester.Location = new System.Drawing.Point(542, 0);
+            this.Semester.Margin = new System.Windows.Forms.Padding(4);
+            this.Semester.Name = "Semester";
+            this.Semester.Size = new System.Drawing.Size(70, 70);
+            this.Semester.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Semester.TabIndex = 2;
+            this.Semester.TabStop = false;
+            // 
+            // Fee
+            // 
+            this.Fee.Image = global::QuanlyTrungTam.Properties.Resources.charge;
+            this.Fee.Location = new System.Drawing.Point(413, 0);
+            this.Fee.Margin = new System.Windows.Forms.Padding(4);
+            this.Fee.Name = "Fee";
+            this.Fee.Size = new System.Drawing.Size(70, 70);
+            this.Fee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Fee.TabIndex = 1;
+            this.Fee.TabStop = false;
+            // 
+            // Information
+            // 
+            this.Information.Image = global::QuanlyTrungTam.Properties.Resources.information;
+            this.Information.Location = new System.Drawing.Point(245, 0);
+            this.Information.Margin = new System.Windows.Forms.Padding(4);
+            this.Information.Name = "Information";
+            this.Information.Size = new System.Drawing.Size(70, 70);
+            this.Information.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Information.TabIndex = 1;
+            this.Information.TabStop = false;
+            // 
+            // Schedule
+            // 
+            this.Schedule.Image = global::QuanlyTrungTam.Properties.Resources.schedule;
+            this.Schedule.Location = new System.Drawing.Point(64, 0);
+            this.Schedule.Margin = new System.Windows.Forms.Padding(4);
+            this.Schedule.Name = "Schedule";
+            this.Schedule.Size = new System.Drawing.Size(70, 70);
+            this.Schedule.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Schedule.TabIndex = 0;
+            this.Schedule.TabStop = false;
             // 
             // Update_Button
             // 

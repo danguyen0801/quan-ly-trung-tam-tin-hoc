@@ -13,18 +13,3 @@ C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrung
 C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Inf_Check.resources
 C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Student.resources
 C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Inf_Edit.resources
-F:\PTTk\cuatoi\quan-ly-trung-tam-tin-hoc-main\QuanlyTrungTam\bin\Debug\QuanlyTrungTam.exe.config
-F:\PTTk\cuatoi\quan-ly-trung-tam-tin-hoc-main\QuanlyTrungTam\bin\Debug\QuanlyTrungTam.exe
-F:\PTTk\cuatoi\quan-ly-trung-tam-tin-hoc-main\QuanlyTrungTam\bin\Debug\QuanlyTrungTam.pdb
-F:\PTTk\cuatoi\quan-ly-trung-tam-tin-hoc-main\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csprojAssemblyReference.cache
-F:\PTTk\cuatoi\quan-ly-trung-tam-tin-hoc-main\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Inf_Check.resources
-F:\PTTk\cuatoi\quan-ly-trung-tam-tin-hoc-main\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Inf_Edit.resources
-F:\PTTk\cuatoi\quan-ly-trung-tam-tin-hoc-main\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Login.resources
-F:\PTTk\cuatoi\quan-ly-trung-tam-tin-hoc-main\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Properties.Resources.resources
-F:\PTTk\cuatoi\quan-ly-trung-tam-tin-hoc-main\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Student.resources
-F:\PTTk\cuatoi\quan-ly-trung-tam-tin-hoc-main\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Student_Inf.resources
-F:\PTTk\cuatoi\quan-ly-trung-tam-tin-hoc-main\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csproj.GenerateResource.cache
-F:\PTTk\cuatoi\quan-ly-trung-tam-tin-hoc-main\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csproj.CoreCompileInputs.cache
-F:\PTTk\cuatoi\quan-ly-trung-tam-tin-hoc-main\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csproj.CopyComplete
-F:\PTTk\cuatoi\quan-ly-trung-tam-tin-hoc-main\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.exe
-F:\PTTk\cuatoi\quan-ly-trung-tam-tin-hoc-main\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.pdb
