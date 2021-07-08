@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanlyTrungTam
 {
-    public partial class Teacher : Form
+    public partial class đăng_kí_học : Form
     {
-        public Teacher()
+        public đăng_kí_học()
         {
             InitializeComponent();
         }
