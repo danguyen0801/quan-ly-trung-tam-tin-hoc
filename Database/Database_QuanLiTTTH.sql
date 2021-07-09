@@ -309,11 +309,6 @@ alter table CHUNGCHICTDAOTAO
       references HOCVIEN (MAHV)
 
 
-alter table CHUNGCHITINHOC
-   add constraint FK_CCTH_HV foreign key (MAHV)
-      references HOCVIEN (MAHV)
-
-
 alter table CHUNGCHICTDAOTAO
    add constraint FK_CCCT_CTDT foreign key (MACT)
       references CHUONGTRINHDAOTAO (MACT)
