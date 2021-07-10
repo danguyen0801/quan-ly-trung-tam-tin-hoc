@@ -1,0 +1,6 @@
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\bin\Debug\DTO.dll
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\bin\Debug\DTO.pdb
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.dll
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.pdb
