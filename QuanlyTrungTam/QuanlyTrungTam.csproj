@@ -36,7 +36,11 @@
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\..\..\..\Documents\GitHub\quan-ly-khach-san\UngDungQuanLyKhachSan\UngDungQuanLyKhachSan\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.90\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
@@ -152,6 +156,7 @@
     <EmbeddedResource Include="Teaching-staff.resx">
       <DependentUpon>Teaching-staff.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -213,9 +218,16 @@
   <ItemGroup>
     <None Include="Resources\register.png" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="BUS\" />
-    <Folder Include="DAO\Data\" />
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{fa7c954b-69ac-48f6-988e-2fae53ffc381}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{fa58f1c2-2c7b-48ca-8421-e7d447c0b6d8}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
