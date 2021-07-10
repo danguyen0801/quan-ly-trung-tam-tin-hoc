@@ -36,5 +36,10 @@ namespace QuanlyTrungTam
         {
 
         }
+
+        private void txbMaHV_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

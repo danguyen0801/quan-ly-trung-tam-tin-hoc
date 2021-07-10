@@ -329,13 +329,6 @@ alter table PHIEUHOCPHI
    add constraint FK_PHIEUHP_HV foreign key (MAHV)
       references HOCVIEN (MAHV)
 
-alter table HOCPHIDKCD
-   add constraint FK_HPDKCD_PHIEUHP foreign key (MAPHIEU)
-      references PHIEUHOCPHI (MAPHIEU)
-
-alter table HOCPHIDKHP
-   add constraint FK_HPDKHP_PHIEUHP foreign key (MAPHIEU)
-      references PHIEUHOCPHI (MAPHIEU)
 
 alter table PHIEUHOCPHI
    add constraint FK_PHIEUHP_NV foreign key (MANV)
@@ -345,13 +338,6 @@ alter table LICHTHI
    add constraint FK_LT_NV foreign key (MANV)
       references NVGIAOVU (MANV)
 
-alter table HOCPHIDKCD
-   add constraint FK_HPDKCD_DKCD foreign key (MAHV, MALOPCD)
-      references DKCHUYENDE (MAHV, MALOPCD)
-
-alter table HOCPHIDKHP
-   add constraint FK_HPDKHP_DKHP foreign key (MAHV, MALOPHP)
-      references DKHP (MAHV, MALOPHP)
 
 create proc sp_ThoiKhoaBieu(@mahv nvarchar(20))
 as
@@ -361,11 +347,10 @@ begin
 	where hv.MAHV = dkhp.MAHV and dkhp.MALOPHP = lhp.MALOPHP and lhp.MAMONHOC= mh.MAMONHOC and @mahv = hv.MAHV 
 end
 
-create pro sp_ThongTinCaNhan(@mahv nvarchar(20))
+create proc sp_ThongTinCaNhan(@mahv nvarchar(20))
 as
 	select * from HOCVIEN where @mahv = MAHV
 
-exec sp_ThongTinCaNhan HV001;
 
 create proc sp_XemLichThi (@mahv nvarchar(20))
 as
@@ -375,14 +360,6 @@ begin
 	where hv.MAHV=dkhp.MAHV and dkhp.MALOPHP= lhp.MALOPHP and lhp.MALOPHP = lt.MALOPHP and lhp.MAMONHOC = mh.MAMONHOC and @mahv = hv.MAHV 
 end
 
-create proc sp_XemHocPhi(@MaHV nvarchar(20))
-as
-begin
-	select hv.MAHV, hv.HOTENHV, php.TONGTIEN
-	from HOCVIEN hv, PHIEUHOCPHI php
-	where hv.MAHV= php.MAHV and @mahv = hv.MAHV 
-end
-
 create proc sp_XemDiemThi(@mahv nvarchar(20))
 as
 begin
@@ -390,3 +367,29 @@ begin
 	from HOCVIEN hv, BANGDIEM bd, MONHOC mh
 	where hv.MAHV = bd.MAHV and bd.MAMONHOC = mh.MAMONHOC and @mahv = hv.MAHV 
 end
+
+alter proc sp_XemHocPhi(@MaHV nvarchar(20))
+as
+begin
+	declare @price1 int, @price2 int, @price int 
+	select @price1= sum(cd.GIATIEN)
+	from PHIEUHOCPHI php 
+	join HOCVIEN hv on hv.MAHV=php.MAHV
+	join DKCHUYENDE dk on dk.MAHV=hv.MAHV
+	join LOPCHUYENDE lcd on lcd.MALOPCD = dk.MALOPCD
+	join CHUYENDE cd on cd.MACD=lcd.MACD
+	where  hv.MAHV = @MaHV;
+	select @price2= sum(mh.GIATIEN )
+	from PHIEUHOCPHI php 
+	join HOCVIEN hv on hv.MAHV=php.MAHV
+	join DKHP dk on dk.MAHV=hv.MAHV
+	join LOPHOCPHAN lhp on lhp.MALOPHP = dk.MALOPHP
+	join MONHOC mh on mh.MAMONHOC=lhp.MAMONHOC
+	where hv.MAHV = @MaHV;
+	set @price = @price1 +@price2;
+	Update PHIEUHOCPHI set TONGTIEN = @price where  MAHV = @MaHV;
+end
+
+--exec sp_XemHocPhi 'HV004';
+--select * from PHIEUHOCPHI where MAHV = 'HV004';
+

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanlyTrungTam.BUS;
 
 namespace QuanlyTrungTam
 {
@@ -44,22 +45,22 @@ namespace QuanlyTrungTam
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            dataGridView1.DataSource = HOCVIEN.ThongTinCaNhan();
         }
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-
+            dataGridView1.DataSource = PHIEUHOCPHI.XemHocPhi() ;
         }
 
         private void button1_Click_3(object sender, EventArgs e)
         {
-
+            dataGridView1.DataSource = LICHTHI.XemLichThi();
         }
 
         private void button1_Click_4(object sender, EventArgs e)
         {
-
+            dataGridView1.DataSource = BANGDIEM.XemDiemThi();
         }
 
         private void Semester_Click(object sender, EventArgs e)

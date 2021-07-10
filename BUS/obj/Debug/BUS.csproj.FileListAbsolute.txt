@@ -9,3 +9,14 @@ F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\BUS\obj\Deb
 F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\BUS\obj\Debug\BUS.csproj.CopyComplete
 F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\BUS\obj\Debug\BUS.dll
 F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\BUS\obj\Debug\BUS.pdb
+D:\PTTK\quan-ly-trung-tam-tin-hoc\BUS\bin\Debug\BUS.dll
+D:\PTTK\quan-ly-trung-tam-tin-hoc\BUS\bin\Debug\BUS.pdb
+D:\PTTK\quan-ly-trung-tam-tin-hoc\BUS\bin\Debug\DAO.dll
+D:\PTTK\quan-ly-trung-tam-tin-hoc\BUS\bin\Debug\DTO.dll
+D:\PTTK\quan-ly-trung-tam-tin-hoc\BUS\bin\Debug\DAO.pdb
+D:\PTTK\quan-ly-trung-tam-tin-hoc\BUS\bin\Debug\DTO.pdb
+D:\PTTK\quan-ly-trung-tam-tin-hoc\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\PTTK\quan-ly-trung-tam-tin-hoc\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\PTTK\quan-ly-trung-tam-tin-hoc\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\PTTK\quan-ly-trung-tam-tin-hoc\BUS\obj\Debug\BUS.dll
+D:\PTTK\quan-ly-trung-tam-tin-hoc\BUS\obj\Debug\BUS.pdb
