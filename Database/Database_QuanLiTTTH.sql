@@ -107,8 +107,7 @@ create table CHUYENDE
    GIATIEN					int							null,
    constraint PK_CHUYENDE primary key clustered (MACD)
 );
-alter table CHUYENDE DROP COLUMN TENCD;
-ALTER TABLE CHUYENDE ADD TENCD NVARCHAR(100);
+
 /*==============================================================*/
 /* Table: HOCPHIDKCD                                            */
 /*==============================================================*/
@@ -309,6 +308,11 @@ alter table CHUNGCHICTDAOTAO
       references HOCVIEN (MAHV)
 
 
+alter table CHUNGCHITINHOC
+   add constraint FK_CCTH_HV foreign key (MAHV)
+      references HOCVIEN (MAHV)
+
+
 alter table CHUNGCHICTDAOTAO
    add constraint FK_CCCT_CTDT foreign key (MACT)
       references CHUONGTRINHDAOTAO (MACT)
@@ -349,4 +353,40 @@ alter table HOCPHIDKHP
    add constraint FK_HPDKHP_DKHP foreign key (MAHV, MALOPHP)
       references DKHP (MAHV, MALOPHP)
 
+create proc sp_ThoiKhoaBieu(@mahv nvarchar(20))
+as
+begin
+	select hv.MAHV, mh.MAMONHOC, mh.TENMONHOC, lhp.MALOPHP, lhp.SISO, THOIGIANHOC
+	from HOCVIEN hv, DKHP dkhp, LOPHOCPHAN lhp, MONHOC mh
+	where hv.MAHV = dkhp.MAHV and dkhp.MALOPHP = lhp.MALOPHP and lhp.MAMONHOC= mh.MAMONHOC and @mahv = hv.MAHV 
+end
 
+create pro sp_ThongTinCaNhan(@mahv nvarchar(20))
+as
+	select * from HOCVIEN where @mahv = MAHV
+
+exec sp_ThongTinCaNhan HV001;
+
+create proc sp_XemLichThi (@mahv nvarchar(20))
+as
+begin
+	select hv.MAHV, lt.MALICHTHI, dkhp.MALOPHP, mh.TENMONHOC, lt.PHONGTHI, lt.THOIGIANTHI
+	from HOCVIEN hv, LICHTHI lt, DKHP dkhp, LOPHOCPHAN lhp, MONHOC mh
+	where hv.MAHV=dkhp.MAHV and dkhp.MALOPHP= lhp.MALOPHP and lhp.MALOPHP = lt.MALOPHP and lhp.MAMONHOC = mh.MAMONHOC and @mahv = hv.MAHV 
+end
+
+create proc sp_XemHocPhi(@MaHV nvarchar(20))
+as
+begin
+	select hv.MAHV, hv.HOTENHV, php.TONGTIEN
+	from HOCVIEN hv, PHIEUHOCPHI php
+	where hv.MAHV= php.MAHV and @mahv = hv.MAHV 
+end
+
+create proc sp_XemDiemThi(@mahv nvarchar(20))
+as
+begin
+	select hv.MAHV, mh.TENMONHOC, bd.DIEM, bd.ISPASS, bd.SOLANTHI 
+	from HOCVIEN hv, BANGDIEM bd, MONHOC mh
+	where hv.MAHV = bd.MAHV and bd.MAMONHOC = mh.MAMONHOC and @mahv = hv.MAHV 
+end
