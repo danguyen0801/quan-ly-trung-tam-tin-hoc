@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_Login
+    class DTO_LOGIN
     {
     }
 }
