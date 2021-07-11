@@ -59,6 +59,7 @@
     <Compile Include="DB_HOCPHIDKCD.cs" />
     <Compile Include="DB_HOCVIEN.cs" />
     <Compile Include="DB_LICHTHI.cs" />
+    <Compile Include="DB_Login.cs" />
     <Compile Include="DB_LOPCHUYENDE.cs" />
     <Compile Include="DB_LOPHOCPHAN.cs" />
     <Compile Include="DB_MONHOC.cs" />

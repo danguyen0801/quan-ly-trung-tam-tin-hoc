@@ -18,7 +18,7 @@ namespace DAO
             command.CommandType = CommandType.StoredProcedure;
 
             //command.Parameters.AddWithValue("@mahv", SqlDbType.NVarChar).Value = txbUserName.Text.Trim();
-            command.Parameters.AddWithValue("@mahv", SqlDbType.NVarChar).Value = "HV050";
+            command.Parameters.AddWithValue("@MaHV", SqlDbType.NVarChar).Value = "HV001";
             conn.Open();
             SqlDataAdapter da = new SqlDataAdapter();
             da.SelectCommand = command;
@@ -26,6 +26,30 @@ namespace DAO
             da.Fill(dt);
             conn.Close();
             return dt;
+        }
+        public static void SuaThongTinCaNhan(DTO_HOCVIEN hv)
+        {
+            SqlConnection conn = dbConnectionData.HamKetNoi();
+            SqlCommand command = new SqlCommand("sp_SuaThongTinCaNhan", conn);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.Add("@MaHV", SqlDbType.NVarChar, 20);
+            command.Parameters.Add("@TenHV", SqlDbType.NVarChar, 50);
+            command.Parameters.Add("@GioiTinh", SqlDbType.NVarChar, 10);
+            command.Parameters.Add("@SDT", SqlDbType.NVarChar, 10);
+            command.Parameters.Add("@Email", SqlDbType.NVarChar, 50);
+            command.Parameters.Add("@NgaySinh", SqlDbType.Date);
+            command.Parameters.Add("@DiemThiTN", SqlDbType.Int);
+            command.Parameters["@MaHV"].Value = hv.MaHV1;
+            command.Parameters["@TenHV"].Value = hv.TenHV1;
+            command.Parameters["@GioiTinh"].Value = hv.GioiTinh1;
+            command.Parameters["@SDT"].Value = hv.SDT1;
+            command.Parameters["@Email"].Value = hv.Email1;
+            command.Parameters["@NgaySinh"].Value = hv.NgaySinh1;
+            command.Parameters["@DiemThiTN"].Value = hv.DiemThiTN1;
+
+            conn.Open();
+            command.ExecuteNonQuery();
+            conn.Close();
         }
     }
 }

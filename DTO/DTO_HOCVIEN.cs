@@ -9,57 +9,30 @@ namespace DTO
     public class DTO_HOCVIEN
     {
         private string MaHV;
-        private string HoTenHV;
+        private string TenHV;
         private string GioiTinh;
-        private string SoDT;
-        private DateTime NgaySinh;
+        private string SDT;
         private string Email;
+        private DateTime NgaySinh;       
         private int DiemThiTN;
 
-        public string MAHV
+        public DTO_HOCVIEN(string maHV, string tenHV, string gioiTinh, string sDT, string email, DateTime ngaySinh, int diemThiTN)
         {
-            get { return MaHV; }
-            set { MaHV = value; }
+            MaHV = maHV;
+            TenHV = tenHV;
+            GioiTinh = gioiTinh;
+            SDT = sDT;
+            Email = email;
+            NgaySinh = ngaySinh;
+            DiemThiTN = diemThiTN;
         }
-        public string HOTENHV
-        {
-            get { return HoTenHV; }
-            set { HoTenHV = value; }
-        }
-        public string GIOITINH
-        {
-            get { return GioiTinh; }
-            set { GioiTinh = value; }
-        }    
-        public string SDT
-        {
-            get { return SoDT; }
-            set { SoDT = value; }
-        }        
-        public DateTime NGAYSINH
-        {
-            get { return NgaySinh; }
-            set { NgaySinh = value; }
-        }      
-        public string EMAIL
-        {
-            get { return Email; }
-            set { Email = value; }
-        }      
-        public int DIEMTHITN
-        {
-            get { return DiemThiTN; }
-            set { DiemThiTN = value; }
-        }
-        public DTO_HOCVIEN(string MaHV, string HoTenHV, string GioiTinh, string SoDT, DateTime NgaySinh, string Email, int DiemThiTN)
-        {
-            this.MaHV = MaHV;
-            this.HoTenHV = HoTenHV;
-            this.GioiTinh = GioiTinh;
-            this.SoDT = SoDT;
-            this.NgaySinh = NgaySinh;
-            this.Email = Email;
-            this.DiemThiTN = DiemThiTN;
-        }
+
+        public string MaHV1 { get => MaHV; set => MaHV = value; }
+        public string TenHV1 { get => TenHV; set => TenHV = value; }
+        public string GioiTinh1 { get => GioiTinh; set => GioiTinh = value; }
+        public string SDT1 { get => SDT; set => SDT = value; }
+        public string Email1 { get => Email; set => Email = value; }
+        public DateTime NgaySinh1 { get => NgaySinh; set => NgaySinh = value; }
+        public int DiemThiTN1 { get => DiemThiTN; set => DiemThiTN = value; }
     }
 }

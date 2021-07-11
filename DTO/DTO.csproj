@@ -53,6 +53,7 @@
     <Compile Include="DTO_HOCPHIDKCD.cs" />
     <Compile Include="DTO_HOCVIEN.cs" />
     <Compile Include="DTO_LICHTHI.cs" />
+    <Compile Include="DTO_Login.cs" />
     <Compile Include="DTO_LOPCHUYENDE.cs" />
     <Compile Include="DTO_LOPHOCPHAN.cs" />
     <Compile Include="DTO_MONHOC.cs" />

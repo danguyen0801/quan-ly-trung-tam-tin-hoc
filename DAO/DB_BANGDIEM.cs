@@ -18,7 +18,7 @@ namespace DAO
             command.CommandType = CommandType.StoredProcedure;
 
             //command.Parameters.AddWithValue("@mahv", SqlDbType.NVarChar).Value = txbUserName.Text.Trim();
-            command.Parameters.AddWithValue("@mahv", SqlDbType.NVarChar).Value = "HV050";
+            command.Parameters.AddWithValue("@mahv", SqlDbType.NVarChar).Value = "HV001";
             conn.Open();
             SqlDataAdapter da = new SqlDataAdapter();
             da.SelectCommand = command;

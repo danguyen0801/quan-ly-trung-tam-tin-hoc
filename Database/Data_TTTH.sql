@@ -1,6 +1,8 @@
 ﻿use QUANLITRUNGTAMTINHOC
 go
 
+
+
 insert into CHUONGTRINHDAOTAO( MACT, MOTA ) values ('CTDT 001', N'Đào tạo chuyên đề');
 insert into CHUONGTRINHDAOTAO( MACT, MOTA ) values ('CTDT 002', N'Đào tạo chứng chỉ');
 insert into CHUONGTRINHDAOTAO( MACT, MOTA ) values ('CTDT 003', N'Đào tạo kĩ thuật viên');
@@ -8,9 +10,9 @@ insert into CHUONGTRINHDAOTAO( MACT, MOTA ) values ('CTDT 003', N'Đào tạo k�
 
 insert into HOCVIEN( MAHV,HOTENHV, GIOITINH, SDT, EMAIL, NGAYSINH, DIEMTHITOTNGHIEP) values ('HV001', N'Nguyễn Thị A', N'nữ', N' 037906238', 'nguyenthia@gmail.com', CAST(N'2000-05-01' AS Date), null);
 insert into HOCVIEN( MAHV,HOTENHV, GIOITINH, SDT, EMAIL, NGAYSINH, DIEMTHITOTNGHIEP) values ('HV002', N'Nguyễn Thị B', N'nữ', N' 037906394', 'nguyenthib@gmail.com', CAST(N'2000-05-04' AS Date), null);
-insert into HOCVIEN( MAHV,HOTENHV, GIOITINH, SDT, EMAIL, NGAYSINH, DIEMTHITOTNGHIEP) values ('HV003', N'Nguyễn Văn C', N'nam', N'4438798', N'snpvhsh90@mralkn.com', CAST(N'2001-06-04' AS Date), null);
-insert into HOCVIEN( MAHV,HOTENHV, GIOITINH, SDT, EMAIL, NGAYSINH, DIEMTHITOTNGHIEP) values ('HV004', N'Tracey O', N'Nữ', N'7325796', N'bggqpqzp.qyacuwhape@-jlfsn.net', CAST(N'1998-06-21' AS Date), null);
-insert into HOCVIEN( MAHV,HOTENHV, GIOITINH, SDT, EMAIL, NGAYSINH, DIEMTHITOTNGHIEP) values ('HV005', N'Lance Webb', N'Nữ', N'7499311', N'addctbhd848@holawh.net', CAST(N'1997-11-16' AS Date), null);
+insert into HOCVIEN( MAHV,HOTENHV, GIOITINH, SDT, EMAIL, NGAYSINH, DIEMTHITOTNGHIEP) values ('HV003', N'Nguyễn Văn C', N'nam', N' 04438798', N'snpvhsh90@gmail.com', CAST(N'2001-06-04' AS Date), null);
+insert into HOCVIEN( MAHV,HOTENHV, GIOITINH, SDT, EMAIL, NGAYSINH, DIEMTHITOTNGHIEP) values ('HV004', N'Tracey O', N'Nữ', N'07325796', N'bggqpqzp.qyacuwhape@gmail.com', CAST(N'1998-06-21' AS Date), null);
+insert into HOCVIEN( MAHV,HOTENHV, GIOITINH, SDT, EMAIL, NGAYSINH, DIEMTHITOTNGHIEP) values ('HV005', N'Lance Webb', N'Nữ', N'7499311', N'addctbhd848@gmail.com', CAST(N'1997-11-16' AS Date), null);
 insert into HOCVIEN( MAHV,HOTENHV, GIOITINH, SDT, EMAIL, NGAYSINH, DIEMTHITOTNGHIEP) values ('HV006', N'Ginger Esparza', N'Nam', N'1730988', N'rafb@wnxu.we-pdw.org', CAST(N'1999-11-09' AS Date), null);
 insert into HOCVIEN( MAHV,HOTENHV, GIOITINH, SDT, EMAIL, NGAYSINH, DIEMTHITOTNGHIEP) values ('HV007', N'Nichole Mueller', N'Nam', N'2800866', N'qntiwxb4@ccfiwn.igsqva.net', CAST(N'2000-04-25' AS Date) , null);
 insert into HOCVIEN( MAHV,HOTENHV, GIOITINH, SDT, EMAIL, NGAYSINH, DIEMTHITOTNGHIEP) values ('HV008', N'Fred Bradford', N'Nam', N'0294728', N'kznjc@pni-pu.com', CAST(N'2002-01-14' AS Date), null);
@@ -532,6 +534,28 @@ insert into DKHP(MAHV, MALOPHP, THOIGIANDK) values('HV099', 'LHP 802', CAST(N'20
 insert into DKHP(MAHV, MALOPHP, THOIGIANDK) values('HV100', 'LHP 801', CAST(N'2021-06-01' AS Date));
 insert into DKHP(MAHV, MALOPHP, THOIGIANDK) values('HV100', 'LHP 802', CAST(N'2021-06-01' AS Date));
 
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV001', 'MH 101', 7, 1, 1);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV001', 'MH 102', 8, 1, 2);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV001', 'MH 103', 9, 1, 1);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV002', 'MH 201', 10, 1, 3);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV002', 'MH 202', 9, 1, 1);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV003', 'MH 301', 6, 1, 1);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV003', 'MH 302', 6, 1, 2);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV004', 'MH 401', 3, 0, 2);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV004', 'MH 402', 9, 1,  1);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV005', 'MH 501', 6, 1, 1);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV005', 'MH 502', 5, 1,  1);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV006', 'MH 601', 2, 0,  1);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV006', 'MH 602', 9, 1, 1);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV007', 'MH 101', 7, 1, 3);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV007', 'MH 102', 4, 0, 3);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV007', 'MH 103', 9, 1, 2);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV008', 'MH 201', 10, 1, 1);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV008', 'MH 202', 3, 0, 1);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV009', 'MH 301', 6, 1,  2);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV009', 'MH 302', 6, 1,  2);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV010', 'MH 401', 10, 1, 3);
+insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV010', 'MH 402', 9, 1, 1);
 
 insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV021', 'MH 101', 7, 1, 1);
 insert into BANGDIEM(MAHV, MAMONHOC, DIEM, ISPASS, SOLANTHI) values ('HV021', 'MH 102', 8, 1, 2);

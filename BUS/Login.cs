@@ -7,13 +7,9 @@ using DAO;
 using DTO;
 using System.Data;
 
-namespace QuanlyTrungTam.BUS
+namespace BUS
 {
-    public class MONHOC
+    class Login
     {
-        public static DataTable ThoiKhoaBieu()
-        {
-            return DB_MONHOC.getData();
-        }
     }
 }

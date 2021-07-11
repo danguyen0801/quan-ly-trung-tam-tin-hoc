@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanlyTrungTam.BUS;
 
 namespace QuanlyTrungTam
 {
@@ -15,6 +16,12 @@ namespace QuanlyTrungTam
         public Student_Inf()
         {
             InitializeComponent();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dataGridView1.DataSource = HOCVIEN.ThongTinCaNhan();
+            
         }
     }
 }

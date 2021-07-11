@@ -53,6 +53,7 @@
     <Compile Include="HOCPHIDKCD.cs" />
     <Compile Include="HOCVIEN.cs" />
     <Compile Include="LICHTHI.cs" />
+    <Compile Include="Login.cs" />
     <Compile Include="LOPCHUYENDE.cs" />
     <Compile Include="LOPHOCPHAN.cs" />
     <Compile Include="MONHOC.cs" />
