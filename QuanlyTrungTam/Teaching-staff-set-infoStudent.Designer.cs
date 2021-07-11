@@ -41,23 +41,21 @@ namespace QuanlyTrungTam
             this.Schedule_Button = new System.Windows.Forms.Button();
             this.Schedule = new System.Windows.Forms.PictureBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.listStudent = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.txbEmail = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.update_button = new System.Windows.Forms.Button();
             this.Return_Button = new System.Windows.Forms.Button();
             this.txbGioiTinh = new System.Windows.Forms.TextBox();
             this.txbSĐT = new System.Windows.Forms.TextBox();
             this.txbNgaySinh = new System.Windows.Forms.TextBox();
             this.txbHovaten = new System.Windows.Forms.TextBox();
-            this.txbMaHV = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.listStudent = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -218,22 +216,29 @@ namespace QuanlyTrungTam
             // 
             this.splitContainer1.Panel2.Controls.Add(this.txbEmail);
             this.splitContainer1.Panel2.Controls.Add(this.label8);
-            this.splitContainer1.Panel2.Controls.Add(this.button4);
+            this.splitContainer1.Panel2.Controls.Add(this.update_button);
             this.splitContainer1.Panel2.Controls.Add(this.Return_Button);
             this.splitContainer1.Panel2.Controls.Add(this.txbGioiTinh);
             this.splitContainer1.Panel2.Controls.Add(this.txbSĐT);
             this.splitContainer1.Panel2.Controls.Add(this.txbNgaySinh);
             this.splitContainer1.Panel2.Controls.Add(this.txbHovaten);
-            this.splitContainer1.Panel2.Controls.Add(this.txbMaHV);
             this.splitContainer1.Panel2.Controls.Add(this.label6);
             this.splitContainer1.Panel2.Controls.Add(this.label5);
             this.splitContainer1.Panel2.Controls.Add(this.label4);
             this.splitContainer1.Panel2.Controls.Add(this.label3);
-            this.splitContainer1.Panel2.Controls.Add(this.label2);
             this.splitContainer1.Panel2.Controls.Add(this.label1);
             this.splitContainer1.Size = new System.Drawing.Size(801, 354);
             this.splitContainer1.SplitterDistance = 285;
             this.splitContainer1.TabIndex = 2;
+            // 
+            // listStudent
+            // 
+            this.listStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listStudent.Location = new System.Drawing.Point(1, 40);
+            this.listStudent.Name = "listStudent";
+            this.listStudent.Size = new System.Drawing.Size(281, 311);
+            this.listStudent.TabIndex = 53;
+            this.listStudent.SelectionChanged += new System.EventHandler(this.listStudent_SelectionChanged);
             // 
             // label9
             // 
@@ -264,18 +269,19 @@ namespace QuanlyTrungTam
             this.label8.TabIndex = 51;
             this.label8.Text = "Email";
             // 
-            // button4
+            // update_button
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkCyan;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(152, 248);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(104, 28);
-            this.button4.TabIndex = 50;
-            this.button4.Text = "Lưu";
-            this.button4.UseVisualStyleBackColor = false;
+            this.update_button.BackColor = System.Drawing.Color.DarkCyan;
+            this.update_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.update_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update_button.Location = new System.Drawing.Point(152, 248);
+            this.update_button.Margin = new System.Windows.Forms.Padding(2);
+            this.update_button.Name = "update_button";
+            this.update_button.Size = new System.Drawing.Size(104, 28);
+            this.update_button.TabIndex = 50;
+            this.update_button.Text = "Lưu";
+            this.update_button.UseVisualStyleBackColor = false;
+            this.update_button.Click += new System.EventHandler(this.update_button_Click);
             // 
             // Return_Button
             // 
@@ -289,6 +295,7 @@ namespace QuanlyTrungTam
             this.Return_Button.TabIndex = 49;
             this.Return_Button.Text = "Hoàn tác";
             this.Return_Button.UseVisualStyleBackColor = false;
+            this.Return_Button.Click += new System.EventHandler(this.Return_Button_Click);
             // 
             // txbGioiTinh
             // 
@@ -308,7 +315,7 @@ namespace QuanlyTrungTam
             // 
             // txbNgaySinh
             // 
-            this.txbNgaySinh.Location = new System.Drawing.Point(81, 184);
+            this.txbNgaySinh.Location = new System.Drawing.Point(87, 152);
             this.txbNgaySinh.Margin = new System.Windows.Forms.Padding(2);
             this.txbNgaySinh.Name = "txbNgaySinh";
             this.txbNgaySinh.Size = new System.Drawing.Size(108, 20);
@@ -316,19 +323,12 @@ namespace QuanlyTrungTam
             // 
             // txbHovaten
             // 
-            this.txbHovaten.Location = new System.Drawing.Point(81, 145);
+            this.txbHovaten.Location = new System.Drawing.Point(87, 113);
             this.txbHovaten.Margin = new System.Windows.Forms.Padding(2);
             this.txbHovaten.Name = "txbHovaten";
             this.txbHovaten.Size = new System.Drawing.Size(108, 20);
             this.txbHovaten.TabIndex = 44;
-            // 
-            // txbMaHV
-            // 
-            this.txbMaHV.Location = new System.Drawing.Point(81, 108);
-            this.txbMaHV.Margin = new System.Windows.Forms.Padding(2);
-            this.txbMaHV.Name = "txbMaHV";
-            this.txbMaHV.Size = new System.Drawing.Size(108, 20);
-            this.txbMaHV.TabIndex = 43;
+            this.txbHovaten.TextChanged += new System.EventHandler(this.txbHovaten_TextChanged);
             // 
             // label6
             // 
@@ -353,7 +353,7 @@ namespace QuanlyTrungTam
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 188);
+            this.label4.Location = new System.Drawing.Point(7, 159);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 13);
@@ -363,22 +363,12 @@ namespace QuanlyTrungTam
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 149);
+            this.label3.Location = new System.Drawing.Point(7, 120);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 38;
             this.label3.Text = "Họ và tên";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 113);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 13);
-            this.label2.TabIndex = 37;
-            this.label2.Text = "Mã học viên";
             // 
             // label1
             // 
@@ -391,15 +381,6 @@ namespace QuanlyTrungTam
             this.label1.Size = new System.Drawing.Size(298, 26);
             this.label1.TabIndex = 36;
             this.label1.Text = "Cập nhật thông tin cá nhân";
-            // 
-            // listStudent
-            // 
-            this.listStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.listStudent.Location = new System.Drawing.Point(1, 40);
-            this.listStudent.Name = "listStudent";
-            this.listStudent.Size = new System.Drawing.Size(281, 311);
-            this.listStudent.TabIndex = 53;
-            this.listStudent.SelectionChanged += new System.EventHandler(this.listStudent_SelectionChanged);
             // 
             // Teaching_staff_set_infoStudent
             // 
@@ -443,18 +424,16 @@ namespace QuanlyTrungTam
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TextBox txbEmail;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button update_button;
         private System.Windows.Forms.Button Return_Button;
         private System.Windows.Forms.TextBox txbGioiTinh;
         private System.Windows.Forms.TextBox txbSĐT;
         private System.Windows.Forms.TextBox txbNgaySinh;
         private System.Windows.Forms.TextBox txbHovaten;
-        private System.Windows.Forms.TextBox txbMaHV;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView listStudent;

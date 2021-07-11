@@ -21,6 +21,15 @@ namespace DAO
                 return output;
             }
         }
+        public static void updateHocVien(DTO_HOCVIEN hv)
+        {
+            DBConnect _dbContext = new DBConnect();
+            using (IDbConnection _dbConnection = _dbContext.CreateConnection())
+            {
+                var output = _dbConnection.Query<DTO_HOCVIEN>($"UPDATE HOCVIEN SET HOTENHV=N'{hv.HoTenHV}', GIOITINH=N'{hv.GioiTinh}', SDT='{hv.SDT}', EMAIL='{hv.Email}', NGAYSINH='{hv.NgaySinh}' WHERE MAHV='{hv.MaHV}'");
+                
+            }
+        }
     }
        
 }

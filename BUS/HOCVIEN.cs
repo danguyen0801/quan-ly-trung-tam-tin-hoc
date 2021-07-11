@@ -14,5 +14,9 @@ namespace BUS
         {
             return DB_HOCVIEN.DsHocVien();
         }
+        public void updateHocVien(DTO_HOCVIEN hv)
+        {
+            DB_HOCVIEN.updateHocVien(hv);
+        }
     }
 }

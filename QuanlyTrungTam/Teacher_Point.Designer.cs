@@ -80,6 +80,7 @@ namespace QuanlyTrungTam
             this.Scores_Button.TabIndex = 9;
             this.Scores_Button.Text = "Nhập điểm";
             this.Scores_Button.UseVisualStyleBackColor = false;
+            this.Scores_Button.Click += new System.EventHandler(this.Scores_Button_Click);
             // 
             // Scores
             // 
@@ -102,6 +103,7 @@ namespace QuanlyTrungTam
             this.Schedule_Button.TabIndex = 5;
             this.Schedule_Button.Text = "Thời khóa biểu";
             this.Schedule_Button.UseVisualStyleBackColor = false;
+            this.Schedule_Button.Click += new System.EventHandler(this.Schedule_Button_Click);
             // 
             // Schedule
             // 

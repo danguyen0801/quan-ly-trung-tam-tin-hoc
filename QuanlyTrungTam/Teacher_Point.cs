@@ -28,7 +28,7 @@ namespace QuanlyTrungTam
             listHP = _busLopHocPhan.DSLopHPTheoMaGV("GV 06");
             DataTable dt = new DataTable();
             dataGridView1.DataSource = listHP;
-            Scores_Button.Enabled = false;
+           
             update_button.Enabled = false;
         }
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
@@ -48,6 +48,19 @@ namespace QuanlyTrungTam
         private void dataGridView2_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             update_button.Enabled = true;
+        }
+
+        private void Scores_Button_Click(object sender, EventArgs e)
+        {
+            HienThi();
+        }
+
+        private void Schedule_Button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form2 = new Teacher_Calendar();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
         }
     }
 }

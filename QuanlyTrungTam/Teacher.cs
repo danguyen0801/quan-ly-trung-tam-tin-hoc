@@ -19,14 +19,21 @@ namespace QuanlyTrungTam
 
         private void Schedule_Button_Click(object sender, EventArgs e)
         {
-            
-            Application.Run(new Teacher_Calendar());
+
+            this.Hide();
+            var form2 = new Teacher_Calendar();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
+
         }
 
         private void Score_input_Button_Click(object sender, EventArgs e)
         {
-            
-            Application.Run(new Teacher_Point());
+
+            this.Hide();
+            var form2 = new Teacher_Point();
+            form2.Closed += (s, args) => this.Close();
+            form2.Show();
         }
     }
 }
