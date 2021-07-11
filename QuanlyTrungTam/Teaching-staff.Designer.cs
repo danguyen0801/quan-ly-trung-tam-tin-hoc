@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.Inf_Student_Button = new System.Windows.Forms.Button();
             this.Semester_Button = new System.Windows.Forms.Button();
             this.TCTT_Button = new System.Windows.Forms.Button();
@@ -43,6 +44,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.Inf_Student_Button);
             this.panel1.Controls.Add(this.Semester_Button);
             this.panel1.Controls.Add(this.TCTT_Button);
@@ -68,6 +70,21 @@
             this.label1.Text = "Giáo vụ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkCyan;
+            this.button1.BackgroundImage = global::QuanlyTrungTam.Properties.Resources.tải_xuống;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(431, 328);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(175, 230);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Thu học phí";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Inf_Student_Button
             // 
             this.Inf_Student_Button.BackColor = System.Drawing.Color.DarkCyan;
@@ -88,7 +105,7 @@
             this.Semester_Button.BackgroundImage = global::QuanlyTrungTam.Properties.Resources.semester;
             this.Semester_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Semester_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Semester_Button.Location = new System.Drawing.Point(556, 328);
+            this.Semester_Button.Location = new System.Drawing.Point(686, 328);
             this.Semester_Button.Name = "Semester_Button";
             this.Semester_Button.Size = new System.Drawing.Size(175, 230);
             this.Semester_Button.TabIndex = 5;
@@ -117,7 +134,7 @@
             this.DKTL_Button.BackgroundImage = global::QuanlyTrungTam.Properties.Resources.licensing;
             this.DKTL_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DKTL_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DKTL_Button.Location = new System.Drawing.Point(819, 328);
+            this.DKTL_Button.Location = new System.Drawing.Point(918, 328);
             this.DKTL_Button.Name = "DKTL_Button";
             this.DKTL_Button.Size = new System.Drawing.Size(186, 230);
             this.DKTL_Button.TabIndex = 2;
@@ -138,6 +155,7 @@
             this.Register_Button.Text = "Phiếu đăng kí học";
             this.Register_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Register_Button.UseVisualStyleBackColor = false;
+            this.Register_Button.Click += new System.EventHandler(this.Register_Button_Click);
             // 
             // logo
             // 
@@ -175,5 +193,6 @@
         private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.Button Inf_Student_Button;
         private System.Windows.Forms.Button Semester_Button;
+        private System.Windows.Forms.Button button1;
     }
 }

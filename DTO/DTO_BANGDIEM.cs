@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_BANGDIEM
+    public class DTO_BANGDIEM
     {
+        public string MaHV;
+        public string Mamonhoc;
+        public int Diem;
+        public Boolean Ispass;
+        public int Solanthi;
     }
 }

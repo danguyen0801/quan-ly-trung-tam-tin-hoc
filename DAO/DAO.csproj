@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataProvider.cs" />
     <Compile Include="DBConnect.cs" />
     <Compile Include="dbConnectionData.cs" />
     <Compile Include="DB_BANGDIEM.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="DB_HOCPHIDKCD.cs" />
     <Compile Include="DB_HOCVIEN.cs" />
     <Compile Include="DB_LICHTHI.cs" />
+    <Compile Include="DB_LOGIN.cs" />
     <Compile Include="DB_LOPCHUYENDE.cs" />
     <Compile Include="DB_LOPHOCPHAN.cs" />
     <Compile Include="DB_MONHOC.cs" />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_CHUYENDE
+    public class DTO_CHUYENDE
     {
     }
 }

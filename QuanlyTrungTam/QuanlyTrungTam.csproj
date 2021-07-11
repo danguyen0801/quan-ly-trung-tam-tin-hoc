@@ -54,6 +54,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dang ki hoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dang ki hoc.Designer.cs">
+      <DependentUpon>Dang ki hoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dangkithilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangkithilai.Designer.cs">
+      <DependentUpon>Dangkithilai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DKLH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DKLH.Designer.cs">
+      <DependentUpon>DKLH.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inf_Check.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +134,21 @@
     <Compile Include="Teaching-staff.Designer.cs">
       <DependentUpon>Teaching-staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Thuhocphi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thuhocphi.Designer.cs">
+      <DependentUpon>Thuhocphi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dang ki hoc.resx">
+      <DependentUpon>Dang ki hoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangkithilai.resx">
+      <DependentUpon>Dangkithilai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DKLH.resx">
+      <DependentUpon>DKLH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inf_Check.resx">
       <DependentUpon>Inf_Check.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Teaching-staff.resx">
       <DependentUpon>Teaching-staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thuhocphi.resx">
+      <DependentUpon>Thuhocphi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -218,7 +254,9 @@
   <ItemGroup>
     <None Include="Resources\register.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\tải xuống.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{fa7c954b-69ac-48f6-988e-2fae53ffc381}</Project>

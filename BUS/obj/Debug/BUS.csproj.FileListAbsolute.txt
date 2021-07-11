@@ -9,3 +9,14 @@ F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\BUS\obj\Deb
 F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\BUS\obj\Debug\BUS.csproj.CopyComplete
 F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\BUS\obj\Debug\BUS.dll
 F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\BUS\obj\Debug\BUS.pdb
+F:\PTTK cuoki\git\BUS\bin\Debug\BUS.dll
+F:\PTTK cuoki\git\BUS\bin\Debug\BUS.pdb
+F:\PTTK cuoki\git\BUS\bin\Debug\DAO.dll
+F:\PTTK cuoki\git\BUS\bin\Debug\DTO.dll
+F:\PTTK cuoki\git\BUS\bin\Debug\DAO.pdb
+F:\PTTK cuoki\git\BUS\bin\Debug\DTO.pdb
+F:\PTTK cuoki\git\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+F:\PTTK cuoki\git\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+F:\PTTK cuoki\git\BUS\obj\Debug\BUS.csproj.CopyComplete
+F:\PTTK cuoki\git\BUS\obj\Debug\BUS.dll
+F:\PTTK cuoki\git\BUS\obj\Debug\BUS.pdb

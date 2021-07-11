@@ -8,5 +8,6 @@ namespace QuanlyTrungTam.BUS
 {
     class GIANGVIEN
     {
+        
     }
 }
