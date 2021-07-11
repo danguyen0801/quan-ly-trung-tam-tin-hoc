@@ -36,6 +36,11 @@
             this.Inf_Button = new System.Windows.Forms.Button();
             this.Semester_Button = new System.Windows.Forms.Button();
             this.Fee_Button = new System.Windows.Forms.Button();
+            this.Scores = new System.Windows.Forms.PictureBox();
+            this.Semester = new System.Windows.Forms.PictureBox();
+            this.Fee = new System.Windows.Forms.PictureBox();
+            this.Information = new System.Windows.Forms.PictureBox();
+            this.Schedule = new System.Windows.Forms.PictureBox();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -54,11 +59,6 @@
             this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Scores = new System.Windows.Forms.PictureBox();
-            this.Semester = new System.Windows.Forms.PictureBox();
-            this.Fee = new System.Windows.Forms.PictureBox();
-            this.Information = new System.Windows.Forms.PictureBox();
-            this.Schedule = new System.Windows.Forms.PictureBox();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,14 +67,15 @@
             this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Scores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Semester)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Fee)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Information)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Schedule)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -88,22 +89,25 @@
             this.panel1.Controls.Add(this.Schedule);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(775, 115);
+            this.panel1.Size = new System.Drawing.Size(715, 93);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.Schedule_Button);
             this.panel2.Controls.Add(this.Scores_Button);
             this.panel2.Controls.Add(this.Inf_Button);
             this.panel2.Controls.Add(this.Semester_Button);
             this.panel2.Controls.Add(this.Fee_Button);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 81);
+            this.panel2.Location = new System.Drawing.Point(0, 65);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(775, 34);
+            this.panel2.Size = new System.Drawing.Size(715, 28);
             this.panel2.TabIndex = 9;
             // 
             // Schedule_Button
@@ -112,20 +116,21 @@
             this.Schedule_Button.BackColor = System.Drawing.Color.DarkCyan;
             this.Schedule_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Schedule_Button.Location = new System.Drawing.Point(1, 0);
-            this.Schedule_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Schedule_Button.Name = "Schedule_Button";
-            this.Schedule_Button.Size = new System.Drawing.Size(176, 34);
+            this.Schedule_Button.Size = new System.Drawing.Size(132, 28);
             this.Schedule_Button.TabIndex = 4;
             this.Schedule_Button.Text = "Thời khóa biểu";
             this.Schedule_Button.UseVisualStyleBackColor = false;
+            this.Schedule_Button.Click += new System.EventHandler(this.Schedule_Button_Click);
             // 
             // Scores_Button
             // 
             this.Scores_Button.BackColor = System.Drawing.Color.DarkCyan;
             this.Scores_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Scores_Button.Location = new System.Drawing.Point(645, 0);
+            this.Scores_Button.Location = new System.Drawing.Point(484, 0);
+            this.Scores_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Scores_Button.Name = "Scores_Button";
-            this.Scores_Button.Size = new System.Drawing.Size(115, 34);
+            this.Scores_Button.Size = new System.Drawing.Size(86, 28);
             this.Scores_Button.TabIndex = 8;
             this.Scores_Button.Text = "Điểm thi";
             this.Scores_Button.UseVisualStyleBackColor = false;
@@ -135,9 +140,10 @@
             // 
             this.Inf_Button.BackColor = System.Drawing.Color.DarkCyan;
             this.Inf_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Inf_Button.Location = new System.Drawing.Point(182, 0);
+            this.Inf_Button.Location = new System.Drawing.Point(136, 0);
+            this.Inf_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Inf_Button.Name = "Inf_Button";
-            this.Inf_Button.Size = new System.Drawing.Size(201, 34);
+            this.Inf_Button.Size = new System.Drawing.Size(151, 28);
             this.Inf_Button.TabIndex = 5;
             this.Inf_Button.Text = "Thông tin cá nhân";
             this.Inf_Button.UseVisualStyleBackColor = false;
@@ -147,9 +153,10 @@
             // 
             this.Semester_Button.BackColor = System.Drawing.Color.DarkCyan;
             this.Semester_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Semester_Button.Location = new System.Drawing.Point(513, 0);
+            this.Semester_Button.Location = new System.Drawing.Point(385, 0);
+            this.Semester_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Semester_Button.Name = "Semester_Button";
-            this.Semester_Button.Size = new System.Drawing.Size(126, 34);
+            this.Semester_Button.Size = new System.Drawing.Size(94, 28);
             this.Semester_Button.TabIndex = 7;
             this.Semester_Button.Text = "Lịch thi";
             this.Semester_Button.UseVisualStyleBackColor = false;
@@ -159,13 +166,67 @@
             // 
             this.Fee_Button.BackColor = System.Drawing.Color.DarkCyan;
             this.Fee_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Fee_Button.Location = new System.Drawing.Point(389, 0);
+            this.Fee_Button.Location = new System.Drawing.Point(292, 0);
+            this.Fee_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Fee_Button.Name = "Fee_Button";
-            this.Fee_Button.Size = new System.Drawing.Size(118, 34);
+            this.Fee_Button.Size = new System.Drawing.Size(88, 28);
             this.Fee_Button.TabIndex = 6;
             this.Fee_Button.Text = "Học phí";
             this.Fee_Button.UseVisualStyleBackColor = false;
             this.Fee_Button.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // Scores
+            // 
+            this.Scores.Image = global::QuanlyTrungTam.Properties.Resources.score;
+            this.Scores.Location = new System.Drawing.Point(500, 0);
+            this.Scores.Name = "Scores";
+            this.Scores.Size = new System.Drawing.Size(52, 57);
+            this.Scores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Scores.TabIndex = 3;
+            this.Scores.TabStop = false;
+            // 
+            // Semester
+            // 
+            this.Semester.Image = global::QuanlyTrungTam.Properties.Resources.semester;
+            this.Semester.Location = new System.Drawing.Point(406, 0);
+            this.Semester.Name = "Semester";
+            this.Semester.Size = new System.Drawing.Size(52, 57);
+            this.Semester.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Semester.TabIndex = 2;
+            this.Semester.TabStop = false;
+            this.Semester.Click += new System.EventHandler(this.Semester_Click);
+            // 
+            // Fee
+            // 
+            this.Fee.Image = global::QuanlyTrungTam.Properties.Resources.charge;
+            this.Fee.Location = new System.Drawing.Point(310, 0);
+            this.Fee.Name = "Fee";
+            this.Fee.Size = new System.Drawing.Size(52, 57);
+            this.Fee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Fee.TabIndex = 1;
+            this.Fee.TabStop = false;
+            // 
+            // Information
+            // 
+            this.Information.Image = global::QuanlyTrungTam.Properties.Resources.information;
+            this.Information.Location = new System.Drawing.Point(184, 0);
+            this.Information.Name = "Information";
+            this.Information.Size = new System.Drawing.Size(52, 57);
+            this.Information.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Information.TabIndex = 1;
+            this.Information.TabStop = false;
+            this.Information.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // Schedule
+            // 
+            this.Schedule.Image = global::QuanlyTrungTam.Properties.Resources.schedule;
+            this.Schedule.Location = new System.Drawing.Point(48, 0);
+            this.Schedule.Name = "Schedule";
+            this.Schedule.Size = new System.Drawing.Size(52, 57);
+            this.Schedule.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Schedule.TabIndex = 0;
+            this.Schedule.TabStop = false;
+            this.Schedule.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // toolStripSeparator
             // 
@@ -269,71 +330,14 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 114);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 95);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(775, 310);
+            this.dataGridView1.Size = new System.Drawing.Size(715, 252);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Scores
-            // 
-            this.Scores.Image = global::QuanlyTrungTam.Properties.Resources.score;
-            this.Scores.Location = new System.Drawing.Point(666, 0);
-            this.Scores.Margin = new System.Windows.Forms.Padding(4);
-            this.Scores.Name = "Scores";
-            this.Scores.Size = new System.Drawing.Size(70, 70);
-            this.Scores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Scores.TabIndex = 3;
-            this.Scores.TabStop = false;
-            // 
-            // Semester
-            // 
-            this.Semester.Image = global::QuanlyTrungTam.Properties.Resources.semester;
-            this.Semester.Location = new System.Drawing.Point(542, 0);
-            this.Semester.Margin = new System.Windows.Forms.Padding(4);
-            this.Semester.Name = "Semester";
-            this.Semester.Size = new System.Drawing.Size(70, 70);
-            this.Semester.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Semester.TabIndex = 2;
-            this.Semester.TabStop = false;
-            this.Semester.Click += new System.EventHandler(this.Semester_Click);
-            // 
-            // Fee
-            // 
-            this.Fee.Image = global::QuanlyTrungTam.Properties.Resources.charge;
-            this.Fee.Location = new System.Drawing.Point(413, 0);
-            this.Fee.Margin = new System.Windows.Forms.Padding(4);
-            this.Fee.Name = "Fee";
-            this.Fee.Size = new System.Drawing.Size(70, 70);
-            this.Fee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Fee.TabIndex = 1;
-            this.Fee.TabStop = false;
-            // 
-            // Information
-            // 
-            this.Information.Image = global::QuanlyTrungTam.Properties.Resources.information;
-            this.Information.Location = new System.Drawing.Point(245, 0);
-            this.Information.Margin = new System.Windows.Forms.Padding(4);
-            this.Information.Name = "Information";
-            this.Information.Size = new System.Drawing.Size(70, 70);
-            this.Information.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Information.TabIndex = 1;
-            this.Information.TabStop = false;
-            this.Information.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // Schedule
-            // 
-            this.Schedule.Image = global::QuanlyTrungTam.Properties.Resources.schedule;
-            this.Schedule.Location = new System.Drawing.Point(64, 0);
-            this.Schedule.Margin = new System.Windows.Forms.Padding(4);
-            this.Schedule.Name = "Schedule";
-            this.Schedule.Size = new System.Drawing.Size(70, 70);
-            this.Schedule.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Schedule.TabIndex = 0;
-            this.Schedule.TabStop = false;
-            this.Schedule.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // newToolStripMenuItem
             // 
@@ -406,23 +410,37 @@
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
             this.pasteToolStripMenuItem.Text = "&Paste";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkCyan;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(607, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 28);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_5);
+            // 
             // Inf_Check
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 424);
+            this.ClientSize = new System.Drawing.Size(715, 347);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Inf_Check";
             this.Text = "Inf_Check";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Scores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Semester)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Fee)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Information)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Schedule)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -467,5 +485,6 @@
         private System.Windows.Forms.Button Semester_Button;
         private System.Windows.Forms.Button Scores_Button;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button1;
     }
 }

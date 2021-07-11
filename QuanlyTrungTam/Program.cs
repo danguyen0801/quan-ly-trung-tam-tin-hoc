@@ -17,7 +17,7 @@ namespace QuanlyTrungTam
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Login());
-            Application.Run(new Inf_Check());
+            Application.Run(new Student());
         }
     }
 }

@@ -1,14 +1,14 @@
-/*==============================================================*/
+﻿/*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2019                    */
 /* Created on:     5/26/2021 11:36:16 PM                        */
 /*==============================================================*/
-
 
 create database QUANLITRUNGTAMTINHOC
 go
 
 use QUANLITRUNGTAMTINHOC
 go
+
 
 /*==============================================================*/
 /* Table: CHUONGTRINHDAOTAO                                     */
@@ -339,36 +339,43 @@ alter table LICHTHI
       references NVGIAOVU (MANV)
 
 
-create proc sp_ThoiKhoaBieu(@mahv nvarchar(20))
+create proc sp_ThoiKhoaBieu(@MaHV nvarchar(20))
 as
 begin
-	select hv.MAHV, mh.MAMONHOC, mh.TENMONHOC, lhp.MALOPHP, lhp.SISO, THOIGIANHOC
+	select N'Mã HV' = hv.MAHV, N'Mã Môn Học' = mh.MAMONHOC, N'Tên Môn Học'=mh.TENMONHOC,N'Mã Lớp' = lhp.MALOPHP,N'Sĩ Số' = lhp.SISO, N'TG Bắt Đầu' = lhp.THOIGIANHOC
 	from HOCVIEN hv, DKHP dkhp, LOPHOCPHAN lhp, MONHOC mh
-	where hv.MAHV = dkhp.MAHV and dkhp.MALOPHP = lhp.MALOPHP and lhp.MAMONHOC= mh.MAMONHOC and @mahv = hv.MAHV 
+	where hv.MAHV = dkhp.MAHV and dkhp.MALOPHP = lhp.MALOPHP and lhp.MAMONHOC= mh.MAMONHOC and @MaHV = hv.MAHV 
+	union
+	select hv.MAHV, cd.MACD, cd.TENCD, lcd.MALOPCD, lcd.SISO, lcd.THOIGIANHOC
+	from HOCVIEN hv
+	join DKCHUYENDE dkcd on hv.MAHV=dkcd.MAHV
+	join LOPCHUYENDE lcd on dkcd.MALOPCD=lcd.MALOPCD
+	join CHUYENDE cd on lcd.MACD = cd.MACD
+	where hv.MAHV = @MaHV;
 end
 
-create proc sp_ThongTinCaNhan(@mahv nvarchar(20))
+create proc sp_ThongTinCaNhan(@MaHV nvarchar(20))
 as
-	select * from HOCVIEN where @mahv = MAHV
+	select * from HOCVIEN where @MaHV = MAHV
 
 
-create proc sp_XemLichThi (@mahv nvarchar(20))
+create proc sp_XemLichThi (@MaHV nvarchar(20))
 as
 begin
-	select hv.MAHV, lt.MALICHTHI, dkhp.MALOPHP, mh.TENMONHOC, lt.PHONGTHI, lt.THOIGIANTHI
+	select N'Mã HV' = hv.MAHV, N'Mã Lịch Thi' = lt.MALICHTHI, N'Mã Lớp' = dkhp.MALOPHP, N'Tên Môn Học' = mh.TENMONHOC, N'Phòng Thi' = lt.PHONGTHI,N'Thời Gian Thi' =  lt.THOIGIANTHI
 	from HOCVIEN hv, LICHTHI lt, DKHP dkhp, LOPHOCPHAN lhp, MONHOC mh
-	where hv.MAHV=dkhp.MAHV and dkhp.MALOPHP= lhp.MALOPHP and lhp.MALOPHP = lt.MALOPHP and lhp.MAMONHOC = mh.MAMONHOC and @mahv = hv.MAHV 
+	where hv.MAHV=dkhp.MAHV and dkhp.MALOPHP= lhp.MALOPHP and lhp.MALOPHP = lt.MALOPHP and lhp.MAMONHOC = mh.MAMONHOC and @MaHV = hv.MAHV 
 end
 
-create proc sp_XemDiemThi(@mahv nvarchar(20))
+create proc sp_XemDiemThi(@MaHV nvarchar(20))
 as
 begin
-	select hv.MAHV, mh.TENMONHOC, bd.DIEM, bd.ISPASS, bd.SOLANTHI 
+	select N'Mã HV' = hv.MAHV, N'Tên Môn Học' = mh.TENMONHOC, N'Điểm' =bd.DIEM, N'IsPass' = bd.ISPASS, N'Số lần thi' =bd.SOLANTHI 
 	from HOCVIEN hv, BANGDIEM bd, MONHOC mh
-	where hv.MAHV = bd.MAHV and bd.MAMONHOC = mh.MAMONHOC and @mahv = hv.MAHV 
+	where hv.MAHV = bd.MAHV and bd.MAMONHOC = mh.MAMONHOC and @MaHV = hv.MAHV 
 end
 
-alter proc sp_XemHocPhi(@MaHV nvarchar(20))
+create proc sp_TinhHocPhi(@MaHV nvarchar(20))
 as
 begin
 	declare @price1 int, @price2 int, @price int 
@@ -389,7 +396,45 @@ begin
 	set @price = @price1 +@price2;
 	Update PHIEUHOCPHI set TONGTIEN = @price where  MAHV = @MaHV;
 end
+create proc sp_XemHocPhi(@MaHV nvarchar(20))
+as
+begin
+	exec sp_TinhHocPhi @MaHV;
+	select N'Mã HV' = hv.MAHV,N'Tên HV' =hv.HoTenHV,N'Tên Môn Học' = cd.TENCD, N'Gía Tiền'=cd.GIATIEN, N'Tổng Học Phí' = php.TongTien
+	from PHIEUHOCPHI php 
+	join HOCVIEN hv on hv.MAHV=php.MAHV
+	join DKCHUYENDE dk on dk.MAHV=hv.MAHV
+	join LOPCHUYENDE lcd on lcd.MALOPCD = dk.MALOPCD
+	join CHUYENDE cd on cd.MACD=lcd.MACD
+	where  hv.MAHV = @MaHV
+	union
+	select hv.MAHV, hv.HOTENHV, mh.TENMONHOC, mh.GIATIEN, php.TongTien
+	from PHIEUHOCPHI php 
+	join HOCVIEN hv on hv.MAHV=php.MAHV
+	join DKHP dk on dk.MAHV=hv.MAHV
+	join LOPHOCPHAN lhp on lhp.MALOPHP = dk.MALOPHP
+	join MONHOC mh on mh.MAMONHOC=lhp.MAMONHOC
+	where hv.MAHV = @MaHV;
+end
 
---exec sp_XemHocPhi 'HV004';
---select * from PHIEUHOCPHI where MAHV = 'HV004';
+create proc sp_SuaThongTinCaNhan
+	@MaHV nvarchar(20),
+	@TenHV nvarchar(50),
+	@GioiTinh nvarchar(10),                     
+	@SDT nvarchar(10),	
+	@Email nvarchar(50),	
+	@NgaySinh date,
+	@DiemThiTN	int	
+as
+begin
+update HOCVIEN
+set HOTENHV= @TenHV,
+GIOITINH = @GioiTinh,
+SDT = @SDT,
+EMAIL = @Email,
+NGAYSINH = @NgaySinh,
+DIEMTHITOTNGHIEP = @DiemThiTN
+where MAHV = @MaHV
+end
+
 

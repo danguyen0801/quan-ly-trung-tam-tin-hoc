@@ -45,7 +45,10 @@ namespace QuanlyTrungTam
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = HOCVIEN.ThongTinCaNhan();
+            Inf_Edit f = new Inf_Edit();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
 
         private void button1_Click_2(object sender, EventArgs e)
@@ -71,6 +74,16 @@ namespace QuanlyTrungTam
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void Schedule_Button_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = MONHOC.ThoiKhoaBieu();
+        }
+
+        private void button1_Click_5(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

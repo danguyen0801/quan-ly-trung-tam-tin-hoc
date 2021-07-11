@@ -15,5 +15,9 @@ namespace QuanlyTrungTam.BUS
         {
             return DB_HOCVIEN.getData();
         }
+        public static void  SuaThongTinCaNhan(DTO_HOCVIEN hv)
+        {
+            DB_HOCVIEN.SuaThongTinCaNhan(hv);
+        }
     }
 }
