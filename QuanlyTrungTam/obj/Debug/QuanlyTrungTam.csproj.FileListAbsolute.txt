@@ -69,3 +69,8 @@ D:\PTTK\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csproj
 D:\PTTK\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csproj.CopyComplete
 D:\PTTK\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.exe
 D:\PTTK\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.pdb
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.ChungChiCTDaoTao.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.ChungChiTinHoc.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.LapLichThi.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.MENU_LapChungChi.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.MENU_LapLichThi.resources
