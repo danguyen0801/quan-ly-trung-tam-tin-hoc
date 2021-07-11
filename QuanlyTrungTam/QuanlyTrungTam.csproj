@@ -54,6 +54,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChungChiCTDaoTao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChungChiCTDaoTao.Designer.cs">
+      <DependentUpon>ChungChiCTDaoTao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChungChiTinHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChungChiTinHoc.Designer.cs">
+      <DependentUpon>ChungChiTinHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inf_Check.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,11 +78,29 @@
     <Compile Include="Inf_Edit.Designer.cs">
       <DependentUpon>Inf_Edit.cs</DependentUpon>
     </Compile>
+    <Compile Include="LapLichThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LapLichThi.Designer.cs">
+      <DependentUpon>LapLichThi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU_LapChungChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU_LapChungChi.Designer.cs">
+      <DependentUpon>MENU_LapChungChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU_LapLichThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU_LapLichThi.Designer.cs">
+      <DependentUpon>MENU_LapLichThi.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -116,14 +146,29 @@
     <Compile Include="Teaching-staff.Designer.cs">
       <DependentUpon>Teaching-staff.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChungChiCTDaoTao.resx">
+      <DependentUpon>ChungChiCTDaoTao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChungChiTinHoc.resx">
+      <DependentUpon>ChungChiTinHoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inf_Check.resx">
       <DependentUpon>Inf_Check.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inf_Edit.resx">
       <DependentUpon>Inf_Edit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LapLichThi.resx">
+      <DependentUpon>LapLichThi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU_LapChungChi.resx">
+      <DependentUpon>MENU_LapChungChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU_LapLichThi.resx">
+      <DependentUpon>MENU_LapLichThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
