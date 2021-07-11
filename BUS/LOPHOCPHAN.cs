@@ -8,7 +8,7 @@ using DTO;
 using System.Data;
 namespace QuanlyTrungTam.BUS
 {
-    class LOPHOCPHAN
+    public class LOPHOCPHAN
     {
         public static DataTable GetAllLopHocPhan()
         {

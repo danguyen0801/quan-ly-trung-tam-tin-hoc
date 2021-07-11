@@ -9,3 +9,14 @@ F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DAO\obj\Deb
 F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DAO\obj\Debug\DAO.csproj.CopyComplete
 F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DAO\obj\Debug\DAO.dll
 F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DAO\obj\Debug\DAO.pdb
+D:\N3\PTTK\quan-ly-trung-tam-tin-hoc-Tram\DAO\bin\Debug\DAO.dll
+D:\N3\PTTK\quan-ly-trung-tam-tin-hoc-Tram\DAO\bin\Debug\DAO.pdb
+D:\N3\PTTK\quan-ly-trung-tam-tin-hoc-Tram\DAO\bin\Debug\Dapper.dll
+D:\N3\PTTK\quan-ly-trung-tam-tin-hoc-Tram\DAO\bin\Debug\DTO.dll
+D:\N3\PTTK\quan-ly-trung-tam-tin-hoc-Tram\DAO\bin\Debug\DTO.pdb
+D:\N3\PTTK\quan-ly-trung-tam-tin-hoc-Tram\DAO\bin\Debug\Dapper.xml
+D:\N3\PTTK\quan-ly-trung-tam-tin-hoc-Tram\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\N3\PTTK\quan-ly-trung-tam-tin-hoc-Tram\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\N3\PTTK\quan-ly-trung-tam-tin-hoc-Tram\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\N3\PTTK\quan-ly-trung-tam-tin-hoc-Tram\DAO\obj\Debug\DAO.dll
+D:\N3\PTTK\quan-ly-trung-tam-tin-hoc-Tram\DAO\obj\Debug\DAO.pdb
