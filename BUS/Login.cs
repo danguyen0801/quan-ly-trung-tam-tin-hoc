@@ -9,7 +9,7 @@ using System.Data;
 
 namespace BUS
 {
-    class Login
+    class LOGIN
     {
     }
 }
