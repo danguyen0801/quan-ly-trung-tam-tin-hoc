@@ -16,5 +16,17 @@ namespace QuanlyTrungTam
         {
             InitializeComponent();
         }
+
+        private void Schedule_Button_Click(object sender, EventArgs e)
+        {
+            
+            Application.Run(new Teacher_Calendar());
+        }
+
+        private void Score_input_Button_Click(object sender, EventArgs e)
+        {
+            
+            Application.Run(new Teacher_Point());
+        }
     }
 }

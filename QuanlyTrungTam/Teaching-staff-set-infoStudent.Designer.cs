@@ -41,24 +41,23 @@ namespace QuanlyTrungTam
             this.Schedule_Button = new System.Windows.Forms.Button();
             this.Schedule = new System.Windows.Forms.PictureBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label9 = new System.Windows.Forms.Label();
             this.txbEmail = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.Return_Button = new System.Windows.Forms.Button();
             this.txbGioiTinh = new System.Windows.Forms.TextBox();
             this.txbSĐT = new System.Windows.Forms.TextBox();
-            this.txbNoiSinh = new System.Windows.Forms.TextBox();
             this.txbNgaySinh = new System.Windows.Forms.TextBox();
             this.txbHovaten = new System.Windows.Forms.TextBox();
             this.txbMaHV = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.listStudent = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -69,6 +68,7 @@ namespace QuanlyTrungTam
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listStudent)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -211,6 +211,7 @@ namespace QuanlyTrungTam
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.listStudent);
             this.splitContainer1.Panel1.Controls.Add(this.label9);
             // 
             // splitContainer1.Panel2
@@ -221,11 +222,9 @@ namespace QuanlyTrungTam
             this.splitContainer1.Panel2.Controls.Add(this.Return_Button);
             this.splitContainer1.Panel2.Controls.Add(this.txbGioiTinh);
             this.splitContainer1.Panel2.Controls.Add(this.txbSĐT);
-            this.splitContainer1.Panel2.Controls.Add(this.txbNoiSinh);
             this.splitContainer1.Panel2.Controls.Add(this.txbNgaySinh);
             this.splitContainer1.Panel2.Controls.Add(this.txbHovaten);
             this.splitContainer1.Panel2.Controls.Add(this.txbMaHV);
-            this.splitContainer1.Panel2.Controls.Add(this.label7);
             this.splitContainer1.Panel2.Controls.Add(this.label6);
             this.splitContainer1.Panel2.Controls.Add(this.label5);
             this.splitContainer1.Panel2.Controls.Add(this.label4);
@@ -236,9 +235,20 @@ namespace QuanlyTrungTam
             this.splitContainer1.SplitterDistance = 285;
             this.splitContainer1.TabIndex = 2;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.Location = new System.Drawing.Point(38, 17);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(203, 20);
+            this.label9.TabIndex = 37;
+            this.label9.Text = "DANH SÁCH HỌC VIÊN";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // txbEmail
             // 
-            this.txbEmail.Location = new System.Drawing.Point(396, 221);
+            this.txbEmail.Location = new System.Drawing.Point(396, 191);
             this.txbEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(108, 20);
@@ -247,7 +257,7 @@ namespace QuanlyTrungTam
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(281, 226);
+            this.label8.Location = new System.Drawing.Point(281, 191);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(32, 13);
@@ -259,7 +269,7 @@ namespace QuanlyTrungTam
             this.button4.BackColor = System.Drawing.Color.DarkCyan;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(170, 273);
+            this.button4.Location = new System.Drawing.Point(152, 248);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(104, 28);
@@ -272,7 +282,7 @@ namespace QuanlyTrungTam
             this.Return_Button.BackColor = System.Drawing.Color.DarkCyan;
             this.Return_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Return_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Return_Button.Location = new System.Drawing.Point(305, 273);
+            this.Return_Button.Location = new System.Drawing.Point(302, 248);
             this.Return_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Return_Button.Name = "Return_Button";
             this.Return_Button.Size = new System.Drawing.Size(104, 28);
@@ -282,7 +292,7 @@ namespace QuanlyTrungTam
             // 
             // txbGioiTinh
             // 
-            this.txbGioiTinh.Location = new System.Drawing.Point(396, 145);
+            this.txbGioiTinh.Location = new System.Drawing.Point(396, 113);
             this.txbGioiTinh.Margin = new System.Windows.Forms.Padding(2);
             this.txbGioiTinh.Name = "txbGioiTinh";
             this.txbGioiTinh.Size = new System.Drawing.Size(108, 20);
@@ -290,19 +300,11 @@ namespace QuanlyTrungTam
             // 
             // txbSĐT
             // 
-            this.txbSĐT.Location = new System.Drawing.Point(396, 184);
+            this.txbSĐT.Location = new System.Drawing.Point(396, 152);
             this.txbSĐT.Margin = new System.Windows.Forms.Padding(2);
             this.txbSĐT.Name = "txbSĐT";
             this.txbSĐT.Size = new System.Drawing.Size(108, 20);
             this.txbSĐT.TabIndex = 47;
-            // 
-            // txbNoiSinh
-            // 
-            this.txbNoiSinh.Location = new System.Drawing.Point(81, 223);
-            this.txbNoiSinh.Margin = new System.Windows.Forms.Padding(2);
-            this.txbNoiSinh.Name = "txbNoiSinh";
-            this.txbNoiSinh.Size = new System.Drawing.Size(108, 20);
-            this.txbNoiSinh.TabIndex = 46;
             // 
             // txbNgaySinh
             // 
@@ -328,20 +330,10 @@ namespace QuanlyTrungTam
             this.txbMaHV.Size = new System.Drawing.Size(108, 20);
             this.txbMaHV.TabIndex = 43;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(5, 227);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 13);
-            this.label7.TabIndex = 42;
-            this.label7.Text = "Nơi sinh";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(281, 188);
+            this.label6.Location = new System.Drawing.Point(281, 152);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(70, 13);
@@ -351,7 +343,7 @@ namespace QuanlyTrungTam
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(281, 149);
+            this.label5.Location = new System.Drawing.Point(281, 113);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 13);
@@ -400,16 +392,14 @@ namespace QuanlyTrungTam
             this.label1.TabIndex = 36;
             this.label1.Text = "Cập nhật thông tin cá nhân";
             // 
-            // label9
+            // listStudent
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.Location = new System.Drawing.Point(38, 17);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(203, 20);
-            this.label9.TabIndex = 37;
-            this.label9.Text = "DANH SÁCH HỌC VIÊN";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.listStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listStudent.Location = new System.Drawing.Point(1, 40);
+            this.listStudent.Name = "listStudent";
+            this.listStudent.Size = new System.Drawing.Size(281, 311);
+            this.listStudent.TabIndex = 53;
+            this.listStudent.SelectionChanged += new System.EventHandler(this.listStudent_SelectionChanged);
             // 
             // Teaching_staff_set_infoStudent
             // 
@@ -432,6 +422,7 @@ namespace QuanlyTrungTam
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.listStudent)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -456,11 +447,9 @@ namespace QuanlyTrungTam
         private System.Windows.Forms.Button Return_Button;
         private System.Windows.Forms.TextBox txbGioiTinh;
         private System.Windows.Forms.TextBox txbSĐT;
-        private System.Windows.Forms.TextBox txbNoiSinh;
         private System.Windows.Forms.TextBox txbNgaySinh;
         private System.Windows.Forms.TextBox txbHovaten;
         private System.Windows.Forms.TextBox txbMaHV;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -468,5 +457,6 @@ namespace QuanlyTrungTam
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridView listStudent;
     }
 }

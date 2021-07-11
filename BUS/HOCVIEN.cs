@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace QuanlyTrungTam.BUS
+using DAO;
+using DTO;
+using System.Data;
+namespace BUS
 {
-    class HOCVIEN
+    public class HOCVIEN
     {
+        public  List<DTO_HOCVIEN> DsHocVien()
+        {
+            return DB_HOCVIEN.DsHocVien();
+        }
     }
 }
