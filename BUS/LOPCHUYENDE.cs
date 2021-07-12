@@ -7,7 +7,7 @@ using DAO;
 using DTO;
 using System.Data;
 namespace QuanlyTrungTam.BUS
-{
+{ 
     public class LOPCHUYENDE
     {
         public DTO_LOPCHUYENDE lcd = new DTO_LOPCHUYENDE();

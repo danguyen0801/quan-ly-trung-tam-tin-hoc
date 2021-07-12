@@ -17,10 +17,11 @@ namespace QuanlyTrungTam
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //Application.Run(new Login());
-            //Application.Run(new Student());
 
             Application.Run(new Login());
+
+
+            Application.Run(new Teaching_staff_set_infoStudent());
 
         }
     }

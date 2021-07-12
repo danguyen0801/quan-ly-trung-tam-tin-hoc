@@ -47,7 +47,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(718, 366);
             this.panel1.TabIndex = 5;
@@ -70,13 +70,14 @@
             this.Score_input_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Score_input_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Score_input_Button.Location = new System.Drawing.Point(546, 112);
-            this.Score_input_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Score_input_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Score_input_Button.Name = "Score_input_Button";
             this.Score_input_Button.Size = new System.Drawing.Size(132, 187);
             this.Score_input_Button.TabIndex = 2;
             this.Score_input_Button.Text = "Nhập điểm";
             this.Score_input_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Score_input_Button.UseVisualStyleBackColor = false;
+            this.Score_input_Button.Click += new System.EventHandler(this.Score_input_Button_Click);
             // 
             // Schedule_Button
             // 
@@ -85,20 +86,21 @@
             this.Schedule_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Schedule_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Schedule_Button.Location = new System.Drawing.Point(351, 112);
-            this.Schedule_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Schedule_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Schedule_Button.Name = "Schedule_Button";
             this.Schedule_Button.Size = new System.Drawing.Size(146, 187);
             this.Schedule_Button.TabIndex = 1;
             this.Schedule_Button.Text = "Xem thời khóa biểu";
             this.Schedule_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Schedule_Button.UseVisualStyleBackColor = false;
+            this.Schedule_Button.Click += new System.EventHandler(this.Schedule_Button_Click);
             // 
             // logo
             // 
             this.logo.Dock = System.Windows.Forms.DockStyle.Left;
             this.logo.Image = global::QuanlyTrungTam.Properties.Resources.teacher;
             this.logo.Location = new System.Drawing.Point(0, 0);
-            this.logo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logo.Margin = new System.Windows.Forms.Padding(2);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(276, 366);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -111,7 +113,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(718, 366);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Teacher";
             this.Text = "Teacher";
             this.panel1.ResumeLayout(false);

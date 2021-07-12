@@ -54,5 +54,10 @@ namespace QuanlyTrungTam
             cc.nv.MaNV = nv.MaNV;
             cc.Show();
         }
+        private void Inf_Student_Button_Click(object sender, EventArgs e)
+        {
+            Application.Run(new Teaching_staff_set_infoStudent());
+
+        }
     }
 }

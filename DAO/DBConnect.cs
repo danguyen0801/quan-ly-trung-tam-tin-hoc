@@ -20,7 +20,7 @@ namespace DAO
 
         public IDbConnection CreateConnection()
         {
-            string strConString = CnnVal("QLHSDb");
+            string strConString = CnnVal("QUANLYTRUNGTAMTINHOC");
             var conn = new SqlConnection(strConString);
             try
             {

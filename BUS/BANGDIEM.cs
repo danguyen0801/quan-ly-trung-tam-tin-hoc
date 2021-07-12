@@ -7,9 +7,10 @@ using DAO;
 using DTO;
 using System.Data;
 
+
 namespace QuanlyTrungTam.BUS
 {
-    public class BANGDIEM    {
+    public class BANGDIEM {
         public static DataTable XemDiemThi()
         {
             return DB_BANGDIEM.getData();
@@ -23,6 +24,11 @@ namespace QuanlyTrungTam.BUS
         {
             DB_BANGDIEM dbbd = new DB_BANGDIEM();
             return dbbd.dskhongdat(MaHV);
+        }
+    
+        public List<DTO_BANGDIEM> DSBangDiemTheoMaMon(string maMon)
+        {
+            return DB_BANGDIEM.DSBangDiemTheoMaMon(maMon);
         }
     }
 }

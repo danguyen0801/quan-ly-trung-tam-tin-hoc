@@ -7,7 +7,7 @@ using DAO;
 using DTO;
 using System.Data;
 
-namespace QuanlyTrungTam.BUS
+namespace BUS
 {
     public class MONHOC
     {

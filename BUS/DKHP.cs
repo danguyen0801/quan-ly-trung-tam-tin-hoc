@@ -26,7 +26,7 @@ namespace QuanlyTrungTam.BUS
                 }
                 else
                     return 2;
-            }    
+            }
             else
                 return 0;
         }
@@ -44,5 +44,5 @@ namespace QuanlyTrungTam.BUS
             DB_DKHP dkhp = new DB_DKHP();
             return dkhp.dsdk(MaHV);
         }
-    }
+    } 
 }

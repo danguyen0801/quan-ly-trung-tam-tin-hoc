@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+
             this.button1 = new System.Windows.Forms.Button();
+
             this.Inf_Student_Button = new System.Windows.Forms.Button();
             this.Semester_Button = new System.Windows.Forms.Button();
             this.TCTT_Button = new System.Windows.Forms.Button();
@@ -60,6 +62,7 @@
             this.panel1.Size = new System.Drawing.Size(866, 475);
             this.panel1.TabIndex = 2;
             // 
+
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DarkCyan;
@@ -76,6 +79,7 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+
             // Inf_Student_Button
             // 
             this.Inf_Student_Button.BackColor = System.Drawing.Color.DarkCyan;
@@ -90,6 +94,7 @@
             this.Inf_Student_Button.Text = "Thông tin học viên";
             this.Inf_Student_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Inf_Student_Button.UseVisualStyleBackColor = false;
+            this.Inf_Student_Button.Click += new System.EventHandler(this.Inf_Student_Button_Click);
             // 
             // Semester_Button
             // 
@@ -97,7 +102,9 @@
             this.Semester_Button.BackgroundImage = global::QuanlyTrungTam.Properties.Resources.semester;
             this.Semester_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Semester_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Semester_Button.Location = new System.Drawing.Point(514, 266);
+
+            this.Semester_Button.Location = new System.Drawing.Point(417, 266);
+
             this.Semester_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Semester_Button.Name = "Semester_Button";
             this.Semester_Button.Size = new System.Drawing.Size(131, 187);
@@ -141,7 +148,9 @@
             this.DKTL_Button.BackgroundImage = global::QuanlyTrungTam.Properties.Resources.licensing;
             this.DKTL_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DKTL_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DKTL_Button.Location = new System.Drawing.Point(688, 266);
+
+            this.DKTL_Button.Location = new System.Drawing.Point(614, 266);
+
             this.DKTL_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DKTL_Button.Name = "DKTL_Button";
             this.DKTL_Button.Size = new System.Drawing.Size(140, 187);

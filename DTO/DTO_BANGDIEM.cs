@@ -10,6 +10,7 @@ namespace DTO
     {
 
 
+
         public DTO_BANGDIEM(string maHV, string maMonHoc, int diem, bool isPass, int soLanthi)
         {
             MaHV = maHV;
@@ -30,6 +31,7 @@ namespace DTO
         public int Diem;
         public Boolean IsPass;
         public int SoLanthi;
+
 
     }
 }

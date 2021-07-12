@@ -7,7 +7,7 @@ using System.Data;
 using DAO;
 using DTO;
 
-namespace QuanlyTrungTam.BUS
+namespace BUS
 {
     public class LICHTHI
     {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using DAO;
 using DTO;
 using System.Data;
-namespace QuanlyTrungTam.BUS
+namespace BUS
 {
     public class LOPHOCPHAN
     {
@@ -16,10 +16,11 @@ namespace QuanlyTrungTam.BUS
         {
             return DB_LOPHOCPHAN.getData();
         }
+
         public int TinhSiSo()
         {
             DB_LOPHOCPHAN dblhp = new DB_LOPHOCPHAN();
-            DataTable dt = dblhp.Tinhsiso(lhp.MaLopHP1);
+            DataTable dt = dblhp.Tinhsiso(lhp.MaLopHP);
             return Int32.Parse(dt.Rows[0][0].ToString());
         }
         public DataTable timLopHocPhan(string MaNhomHP)
@@ -30,11 +31,11 @@ namespace QuanlyTrungTam.BUS
         }
         public string[] Lophocphankhongdat(string MaHV)
         {
-            BANGDIEM db = new BANGDIEM();
-            DKHP dk = new DKHP();
+            DB_BANGDIEM db = new DB_BANGDIEM();
+            DB_DKHP dk = new DB_DKHP();
             string[] t = new string[100];
             int k = 0;
-            DataTable tb1 = db.Dsmonkhongdat(MaHV);
+            DataTable tb1 = db.dskhongdat(MaHV);
             DataTable tb2 = dk.dslopdk(MaHV);
             for(int i=0;i<tb1.Rows.Count;i++)
             {
@@ -51,5 +52,12 @@ namespace QuanlyTrungTam.BUS
             }
             return t;
         }
+
+        public  List<DTO_LOPHOCPHAN> DSLopHPTheoMaGV(string maGV)
+        {
+            return DB_LOPHOCPHAN.DSLopHPTheoMaGV(maGV);
+        }
+
+
     }
 }

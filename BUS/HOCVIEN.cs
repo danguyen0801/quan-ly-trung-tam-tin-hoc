@@ -7,6 +7,7 @@ using DAO;
 using DTO;
 using System.Data;
 
+
 namespace QuanlyTrungTam.BUS
 {
     public class HOCVIEN
@@ -34,7 +35,15 @@ namespace QuanlyTrungTam.BUS
                 return true;
             else
                 return false;
+        }
 
+        public  List<DTO_HOCVIEN> DsHocVien()
+        {
+            return DB_HOCVIEN.DsHocVien();
+        }
+        public void updateHocVien(DTO_HOCVIEN hv)
+        {
+            DB_HOCVIEN.updateHocVien(hv);
         }
     }
 }

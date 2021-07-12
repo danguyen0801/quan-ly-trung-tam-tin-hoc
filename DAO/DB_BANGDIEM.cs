@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using Dapper;
 using DTO;
 namespace DAO
 {
@@ -39,5 +40,18 @@ namespace DAO
         }
 
 
+
+
+        public static List<DTO_BANGDIEM> DSBangDiemTheoMaMon(string maMon)
+        {
+            DBConnect _dbContext = new DBConnect();
+            using (IDbConnection _dbConnection = _dbContext.CreateConnection())
+            {
+                var output = _dbConnection.Query<DTO_BANGDIEM>($"select * from BANGDIEM where MAMONHOC = '{maMon}'").ToList();
+                return output;
+
+
+            }
+        }
     }
 }
