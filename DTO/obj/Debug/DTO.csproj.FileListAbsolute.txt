@@ -1,12 +1,18 @@
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\bin\Debug\DTO.dll
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\bin\Debug\DTO.pdb
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.dll
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.pdb
+F:\PTTK cuoki\git\DTO\bin\Debug\DTO.dll
+F:\PTTK cuoki\git\DTO\bin\Debug\DTO.pdb
+F:\PTTK cuoki\git\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+F:\PTTK cuoki\git\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+F:\PTTK cuoki\git\DTO\obj\Debug\DTO.dll
+F:\PTTK cuoki\git\DTO\obj\Debug\DTO.pdb
 D:\PTTK\quan-ly-trung-tam-tin-hoc\DTO\bin\Debug\DTO.dll
 D:\PTTK\quan-ly-trung-tam-tin-hoc\DTO\bin\Debug\DTO.pdb
 D:\PTTK\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
 D:\PTTK\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\PTTK\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.dll
 D:\PTTK\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.pdb
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\bin\Debug\DTO.dll
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\bin\Debug\DTO.pdb
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.dll
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.pdb
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\DTO\obj\Debug\DTO.csprojAssemblyReference.cache

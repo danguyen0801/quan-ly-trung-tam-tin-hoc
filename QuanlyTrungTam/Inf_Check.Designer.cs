@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inf_Check));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.Schedule_Button = new System.Windows.Forms.Button();
             this.Scores_Button = new System.Windows.Forms.Button();
             this.Inf_Button = new System.Windows.Forms.Button();
@@ -67,7 +68,6 @@
             this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Scores)).BeginInit();
@@ -93,7 +93,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(715, 93);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -109,6 +108,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(715, 28);
             this.panel2.TabIndex = 9;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkCyan;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(607, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 28);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_5);
             // 
             // Schedule_Button
             // 
@@ -134,7 +146,7 @@
             this.Scores_Button.TabIndex = 8;
             this.Scores_Button.Text = "Điểm thi";
             this.Scores_Button.UseVisualStyleBackColor = false;
-            this.Scores_Button.Click += new System.EventHandler(this.button1_Click_4);
+            this.Scores_Button.Click += new System.EventHandler(this.Scores_Button_Click);
             // 
             // Inf_Button
             // 
@@ -147,7 +159,7 @@
             this.Inf_Button.TabIndex = 5;
             this.Inf_Button.Text = "Thông tin cá nhân";
             this.Inf_Button.UseVisualStyleBackColor = false;
-            this.Inf_Button.Click += new System.EventHandler(this.button1_Click_1);
+            this.Inf_Button.Click += new System.EventHandler(this.Inf_Button_Click);
             // 
             // Semester_Button
             // 
@@ -160,7 +172,7 @@
             this.Semester_Button.TabIndex = 7;
             this.Semester_Button.Text = "Lịch thi";
             this.Semester_Button.UseVisualStyleBackColor = false;
-            this.Semester_Button.Click += new System.EventHandler(this.button1_Click_3);
+            this.Semester_Button.Click += new System.EventHandler(this.Semester_Button_Click);
             // 
             // Fee_Button
             // 
@@ -173,7 +185,7 @@
             this.Fee_Button.TabIndex = 6;
             this.Fee_Button.Text = "Học phí";
             this.Fee_Button.UseVisualStyleBackColor = false;
-            this.Fee_Button.Click += new System.EventHandler(this.button1_Click_2);
+            this.Fee_Button.Click += new System.EventHandler(this.Fee_Button_Click);
             // 
             // Scores
             // 
@@ -194,7 +206,6 @@
             this.Semester.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Semester.TabIndex = 2;
             this.Semester.TabStop = false;
-            this.Semester.Click += new System.EventHandler(this.Semester_Click);
             // 
             // Fee
             // 
@@ -215,7 +226,6 @@
             this.Information.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Information.TabIndex = 1;
             this.Information.TabStop = false;
-            this.Information.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Schedule
             // 
@@ -226,7 +236,6 @@
             this.Schedule.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Schedule.TabIndex = 0;
             this.Schedule.TabStop = false;
-            this.Schedule.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // toolStripSeparator
             // 
@@ -337,7 +346,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(715, 252);
             this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // newToolStripMenuItem
             // 
@@ -409,19 +417,6 @@
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
             this.pasteToolStripMenuItem.Text = "&Paste";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkCyan;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(607, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 28);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_5);
             // 
             // Inf_Check
             // 

@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using DTO;
-
+using System.Windows.Forms;
 namespace DAO
 {
     public class DB_PHIEUHOCPHI
     {
+
         public static DataTable getData()
         {
             SqlConnection conn = dbConnectionData.HamKetNoi();
@@ -26,6 +27,17 @@ namespace DAO
             da.Fill(dt);
             conn.Close();
             return dt;
+        }
+        public DataTable select(string Mahv)
+        {
+            MessageBox.Show("select * PHIEUHOCPHI where MAHV='" + Mahv + "'");
+            return DataProvider.Instance.ExecuteQuery("select * PHIEUHOCPHI where MAHV='" + Mahv + "'");
+        }
+        public void Capnhat(string Maphieu,string MaNV)
+        {
+            string t = "update PHIEUHOCPHI set MaNV='" + MaNV + "' where Maphieu='" + Maphieu + "'";
+            DataProvider.Instance.ExecuteNonQuery(t);
+
         }
     }
 }

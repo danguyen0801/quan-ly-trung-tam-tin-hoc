@@ -43,6 +43,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Reflection.Context" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +55,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChungChiCTDaoTao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChungChiCTDaoTao.Designer.cs">
+      <DependentUpon>ChungChiCTDaoTao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChungChiTinHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChungChiTinHoc.Designer.cs">
+      <DependentUpon>ChungChiTinHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dang ki hoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dang ki hoc.Designer.cs">
+      <DependentUpon>Dang ki hoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dangkithilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangkithilai.Designer.cs">
+      <DependentUpon>Dangkithilai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DKLH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DKLH.Designer.cs">
+      <DependentUpon>DKLH.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inf_Check.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,11 +97,29 @@
     <Compile Include="Inf_Edit.Designer.cs">
       <DependentUpon>Inf_Edit.cs</DependentUpon>
     </Compile>
+    <Compile Include="LapLichThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LapLichThi.Designer.cs">
+      <DependentUpon>LapLichThi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU_LapChungChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU_LapChungChi.Designer.cs">
+      <DependentUpon>MENU_LapChungChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU_LapLichThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU_LapLichThi.Designer.cs">
+      <DependentUpon>MENU_LapLichThi.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -116,14 +165,44 @@
     <Compile Include="Teaching-staff.Designer.cs">
       <DependentUpon>Teaching-staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Thuhocphi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thuhocphi.Designer.cs">
+      <DependentUpon>Thuhocphi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChungChiCTDaoTao.resx">
+      <DependentUpon>ChungChiCTDaoTao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChungChiTinHoc.resx">
+      <DependentUpon>ChungChiTinHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dang ki hoc.resx">
+      <DependentUpon>Dang ki hoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangkithilai.resx">
+      <DependentUpon>Dangkithilai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DKLH.resx">
+      <DependentUpon>DKLH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inf_Check.resx">
       <DependentUpon>Inf_Check.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inf_Edit.resx">
       <DependentUpon>Inf_Edit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LapLichThi.resx">
+      <DependentUpon>LapLichThi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU_LapChungChi.resx">
+      <DependentUpon>MENU_LapChungChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU_LapLichThi.resx">
+      <DependentUpon>MENU_LapLichThi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -155,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Teaching-staff.resx">
       <DependentUpon>Teaching-staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thuhocphi.resx">
+      <DependentUpon>Thuhocphi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -218,7 +300,9 @@
   <ItemGroup>
     <None Include="Resources\register.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{fa7c954b-69ac-48f6-988e-2fae53ffc381}</Project>

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_DKCHUYENDE
+    public class DTO_DKCHUYENDE
     {
+        public string MaHV;
+        public string MAlopCD;
+        public string Thoigiandk;
     }
 }

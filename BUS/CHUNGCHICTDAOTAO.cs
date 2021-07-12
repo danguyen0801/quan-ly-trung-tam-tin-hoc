@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using DTO;
 using DAO;
 using System.Data;
-namespace QuanlyTrungTam.BUS
+namespace BUS
 {
     public class CHUNGCHICTDAOTAO
     {
