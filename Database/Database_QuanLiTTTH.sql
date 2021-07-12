@@ -109,17 +109,6 @@ create table CHUYENDE
 );
 
 /*==============================================================*/
-/* Table: HOCPHIDKCD                                            */
-/*==============================================================*/
-create table HOCPHIDKCD
-(
-   MAHV						nvarchar(20)					not null,
-   MALOPCD					nvarchar(20)                    not null,
-   MAPHIEU					nvarchar(20)					not null,
-   constraint PK_HOCPHIDKCD primary key clustered (MAHV, MALOPCD)
-);
-
-/*==============================================================*/
 /* Table: LOPHOCPHAN									        */
 /*==============================================================*/
 create table LOPHOCPHAN
@@ -166,17 +155,6 @@ create table MONHOC
    HINHTHUCDAOTAO		nvarchar(50)					   null,
    GIATIEN              int								   null,
    constraint PK_MONHOC primary key (MAMONHOC)
-);
-
-/*==============================================================*/
-/* Table: HOCPHIDKHP										    */
-/*==============================================================*/
-create table HOCPHIDKHP
-(
-   MAHV						nvarchar(20)				not null,
-   MALOPHP		            nvarchar(20)                not null,
-   MAPHIEU					nvarchar(20)				not null,
-   constraint PK_HOCPHIDKHP primary key clustered (MAHV, MALOPHP)
 );
 
 /*==============================================================*/
