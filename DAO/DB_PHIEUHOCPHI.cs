@@ -30,8 +30,7 @@ namespace DAO
         }
         public DataTable select(string Mahv)
         {
-            MessageBox.Show("select * PHIEUHOCPHI where MAHV='" + Mahv + "'");
-            return DataProvider.Instance.ExecuteQuery("select * PHIEUHOCPHI where MAHV='" + Mahv + "'");
+            return DataProvider.Instance.ExecuteQuery("select * FROM PHIEUHOCPHI where MAHV='" + Mahv + "'");
         }
         public void Capnhat(string Maphieu,string MaNV)
         {

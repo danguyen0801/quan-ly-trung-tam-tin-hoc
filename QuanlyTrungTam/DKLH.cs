@@ -13,12 +13,11 @@ namespace QuanlyTrungTam
 {
     public partial class DKLH : Form
     {
-        public DTO_HOCVIEN hv = new DTO_HOCVIEN();
+        
         DKHP bus_DKHP = new DKHP();
         public DKLH(string maHV)
         {
             InitializeComponent();
-            hv.MaHV = maHV;
         }
         public DKLH()
         {
@@ -67,7 +66,8 @@ namespace QuanlyTrungTam
         {
             if(cbbLoaidaotao.Text=="Chuyên đề") 
             {
-                DKCHUYENDE dkcd = new DKCHUYENDE(hv.MaHV, tMalop.Text.ToString());
+                DKCHUYENDE dkcd = new DKCHUYENDE(tMaHV.Text.ToString(), tMalop.Text.ToString());
+                dkcd.dkcd.MaHV = tMaHV.Text.ToString();
                 int n = dkcd.Dangki();
                 if (n == 1)
                     MessageBox.Show("đăng kí lớp học thành công");
@@ -84,7 +84,7 @@ namespace QuanlyTrungTam
             else
             {
                 DKHP dkhp = new DKHP();
-                dkhp.dkhp.MaHV = hv.MaHV;
+                dkhp.dkhp.MaHV = tMaHV.Text.ToString();
                 dkhp.dkhp.MAlopHP = tMalop.Text.ToString();
                 int n = dkhp.Dangki();
                 if (n == 1)

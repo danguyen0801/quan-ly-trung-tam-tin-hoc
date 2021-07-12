@@ -208,6 +208,7 @@
             this.DKMH_Button.Text = "Đăng ký lớp";
             this.DKMH_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.DKMH_Button.UseVisualStyleBackColor = false;
+            this.DKMH_Button.Click += new System.EventHandler(this.DKMH_Button_Click);
             // 
             // Teaching_staff
             // 

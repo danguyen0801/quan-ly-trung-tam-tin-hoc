@@ -72,5 +72,11 @@ namespace QuanlyTrungTam
             login.Show();
             this.Close();
         }
+
+        private void DKMH_Button_Click(object sender, EventArgs e)
+        {
+            DKLH dk = new DKLH();
+            dk.Show();
+        }
     }
 }

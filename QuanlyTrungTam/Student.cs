@@ -24,12 +24,7 @@ namespace QuanlyTrungTam
         }
         public DTO_HOCVIEN hv = new DTO_HOCVIEN();
 
-        private void DKMH_Button_Click(object sender, EventArgs e)
-        {
-            DKLH dklp = new DKLH(hv.MaHV);
-            
-            dklp.Show();
-        }
+        
 
         private void label1_Click(object sender, EventArgs e)
         {

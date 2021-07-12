@@ -110,3 +110,8 @@ F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrung
 F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csproj.CopyComplete
 F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.exe
 F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.pdb
+F:\PTTK cuoki\git\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.ChungChiCTDaoTao.resources
+F:\PTTK cuoki\git\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.ChungChiTinHoc.resources
+F:\PTTK cuoki\git\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.LapLichThi.resources
+F:\PTTK cuoki\git\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.MENU_LapChungChi.resources
+F:\PTTK cuoki\git\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.MENU_LapLichThi.resources
