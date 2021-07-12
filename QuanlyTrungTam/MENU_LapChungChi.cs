@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using DTO;
 namespace QuanlyTrungTam
 {
     public partial class MENU_LapChungChi : Form
     {
+        public DTO_NVGIAOVU nv = new DTO_NVGIAOVU();
         public MENU_LapChungChi()
         {
             InitializeComponent();

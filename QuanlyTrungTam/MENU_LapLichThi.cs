@@ -14,6 +14,7 @@ namespace QuanlyTrungTam
 {
     public partial class MENU_LapLichThi : Form
     {
+        public DTO_NVGIAOVU nv = new DTO_NVGIAOVU();
         public MENU_LapLichThi()
         {
             InitializeComponent();

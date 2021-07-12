@@ -40,5 +40,19 @@ namespace QuanlyTrungTam
             th.nv.MaNV = nv.MaNV;
             th.Show();
         }
+
+        private void Semester_Button_Click(object sender, EventArgs e)
+        {
+            MENU_LapLichThi lt = new MENU_LapLichThi();
+            lt.nv.MaNV = nv.MaNV;
+            lt.Show();
+        }
+
+        private void DKTL_Button_Click(object sender, EventArgs e)
+        {
+            MENU_LapChungChi cc = new MENU_LapChungChi();
+            cc.nv.MaNV = nv.MaNV;
+            cc.Show();
+        }
     }
 }
