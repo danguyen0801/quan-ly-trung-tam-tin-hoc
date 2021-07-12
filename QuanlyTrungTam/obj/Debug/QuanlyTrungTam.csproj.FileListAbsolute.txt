@@ -13,34 +13,6 @@ C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrung
 C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Inf_Check.resources
 C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Student.resources
 C:\Users\dell\Desktop\Năm 4\QuanlyTrungTam\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Inf_Edit.resources
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\QuanlyTrungTam.exe.config
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\QuanlyTrungTam.exe
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\QuanlyTrungTam.pdb
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\BUS.dll
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\Dapper.dll
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\DTO.dll
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\DAO.dll
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\BUS.pdb
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\DTO.pdb
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\Dapper.xml
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\DAO.pdb
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csprojAssemblyReference.cache
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Inf_Check.resources
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Inf_Edit.resources
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Login.resources
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Properties.Resources.resources
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Student.resources
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Student_Inf.resources
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Teacher.resources
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Teacher_Calendar.resources
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Teacher_Point.resources
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Teaching_staff_set_infoStudent.resources
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Teaching_staff.resources
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csproj.GenerateResource.cache
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csproj.CoreCompileInputs.cache
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csproj.CopyComplete
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.exe
-F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.pdb
 F:\PTTK cuoki\git\QuanlyTrungTam\bin\Debug\QuanlyTrungTam.exe.config
 F:\PTTK cuoki\git\QuanlyTrungTam\bin\Debug\QuanlyTrungTam.exe
 F:\PTTK cuoki\git\QuanlyTrungTam\bin\Debug\QuanlyTrungTam.pdb
@@ -73,3 +45,35 @@ F:\PTTK cuoki\git\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.pdb
 F:\PTTK cuoki\git\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.DKLH.resources
 F:\PTTK cuoki\git\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Dangkithilai.resources
 F:\PTTK cuoki\git\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Thuhocphi.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\QuanlyTrungTam.exe.config
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\QuanlyTrungTam.exe
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\QuanlyTrungTam.pdb
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\BUS.dll
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\Dapper.dll
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\DTO.dll
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\DAO.dll
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\BUS.pdb
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\DTO.pdb
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\Dapper.xml
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\bin\Debug\DAO.pdb
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csprojAssemblyReference.cache
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Dang_ki_hoc.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Dangkithilai.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.DKLH.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Inf_Check.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Inf_Edit.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Login.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Properties.Resources.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Student.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Student_Inf.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Teacher.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Teacher_Calendar.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Teacher_Point.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Teaching_staff_set_infoStudent.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Teaching_staff.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.Thuhocphi.resources
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csproj.GenerateResource.cache
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csproj.CoreCompileInputs.cache
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.csproj.CopyComplete
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.exe
+F:\Documents\MonHoc\Nam3\Ki2\PTTKHTTT\DoAn\quan-ly-trung-tam-tin-hoc\QuanlyTrungTam\obj\Debug\QuanlyTrungTam.pdb

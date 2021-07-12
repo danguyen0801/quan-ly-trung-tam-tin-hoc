@@ -22,25 +22,31 @@ namespace QuanlyTrungTam
         {
             BUS.LOGIN lg = new BUS.LOGIN();
             string t = lg.con(txbUserName.Text.ToString(), txbPassword.Text.ToString());
-            if(t=="Học viên")
+            if (t == "Học viên")
             {
                 Student st = new Student();
                 st.hv.MaHV = txbUserName.Text.ToString();
                 st.Show();
                 this.Hide();
             }
-            else
+            else if (t == "Giáo vụ")
             {
-                if (t == "Nhân viên")
-                {
-                    Teaching_staff ts = new Teaching_staff();
-                    ts.nv.MaNV = txbUserName.Text.ToString();
-                    ts.Show();
-                    this.Hide();
-                }
-                else
-                    MessageBox.Show(t);
-            }    
+
+                Teaching_staff ts = new Teaching_staff();
+
+                ts.nv.MaNV = txbUserName.Text.ToString();
+                ts.Show();
+                this.Hide();
+
+            }
+            else if (t == "Giảng viên")
+            {
+                Teacher tc = new Teacher();
+                tc.gv.MaNV = txbUserName.Text.ToString();
+                tc.Show();
+                this.Hide();
+            }
+            
         }
     }
 }

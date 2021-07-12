@@ -23,7 +23,7 @@ namespace DAO
 
         private DataProvider() { }
 
-        private String connectionSTR = @"Data Source=ADMIN\MSSQLSERVER1;Initial Catalog=QUANLITRUNGTAMTINHOC;Integrated Security=True";
+        private String connectionSTR = @"Data Source=THAOTRUONG\SQL;Initial Catalog=QUANLITRUNGTAMTINHOC;Integrated Security=True";
 
 
         public DataTable ExecuteQuery(String query)

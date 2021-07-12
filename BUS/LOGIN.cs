@@ -18,7 +18,7 @@ namespace QuanlyTrungTam.BUS
             {
                 return dt.Rows[0][2].ToString();
             }
-            return "ten tai khoan hoac mat khau sai, vui long thư lai";
+            return "ten tai khoan hoac mat khau sai, vui long thử lai";
         }
     }
 }
