@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_NHOMCHUYENDE
+    public class DTO_NHOMCHUYENDE
     {
+        public string MaNhomCD;
+        public string TenNhomCD;
+        public string MaCT;
     }
 }

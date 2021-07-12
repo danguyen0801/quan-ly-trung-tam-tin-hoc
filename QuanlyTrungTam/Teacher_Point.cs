@@ -1,55 +1,75 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
+//using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Reflection;
+using BUS;
+using DTO;
 namespace QuanlyTrungTam
 {
     public partial class Teacher_Point : Form
-    {
+    {  LOPHOCPHAN _busLopHocPhan = new LOPHOCPHAN();
+        BANGDIEM _busBangDiem = new BANGDIEM();
+        List<DTO_LOPHOCPHAN> listHP;
+        List<DTO_BANGDIEM> listBangDiem;
+        public DTO_GIANGVIEN gv = new DTO_GIANGVIEN();
+        public Teacher_Point(string maNV)
+        {
+
+            InitializeComponent();
+            gv.MaNV = maNV;
+            HienThi();
+
+        }
         public Teacher_Point()
         {
             InitializeComponent();
+            HienThi();
+            
+        }
+        public void HienThi()
+        {
+            listHP = _busLopHocPhan.DSLopHPTheoMaGV(gv.MaNV);
+            
+            dataGridView1.DataSource = listHP;
+           
+            update_button.Enabled = false;
+        }
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            listBangDiem = _busBangDiem.DSBangDiemTheoMaMon(listHP[dataGridView1.CurrentCell.RowIndex].MaMonHoc);
+            dataGridView2.DataSource = listBangDiem;
+            nameClass.Text = listHP[dataGridView1.CurrentCell.RowIndex].TenLopHP;
+            time.Text = listHP[dataGridView1.CurrentCell.RowIndex].ThoiGianHoc.ToString();
+            subject.Text = listHP[dataGridView1.CurrentCell.RowIndex].MaMonHoc;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void update_button_Click(object sender, EventArgs e)
         {
+            dataGridView2.Update();  
+        }
 
+        private void dataGridView2_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            update_button.Enabled = true;
+        }
+
+        private void Scores_Button_Click(object sender, EventArgs e)
+        {
+            HienThi();
         }
 
         private void Schedule_Button_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+           
+            var form2 = new Teacher_Calendar(gv.MaNV);
+            form2.Show();
+            this.Close();
         }
     }
 }

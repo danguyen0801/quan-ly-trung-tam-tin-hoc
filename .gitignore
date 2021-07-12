@@ -6,3 +6,6 @@
 .vs/slnx.sqlite
 .vs/VSWorkspaceState.json
 
+BUS/bin/Debug/BUS.dll
+*.dll
+BUS/bin/Debug/BUS.pdb

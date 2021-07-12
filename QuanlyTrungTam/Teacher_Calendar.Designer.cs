@@ -31,15 +31,11 @@ namespace QuanlyTrungTam
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.Scores_Button = new System.Windows.Forms.Button();
-            this.Schedule_Button = new System.Windows.Forms.Button();
             this.Scores = new System.Windows.Forms.PictureBox();
+            this.Schedule_Button = new System.Windows.Forms.Button();
             this.Schedule = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.SubjectCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Subject_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Subject_Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Number_Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Scores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Schedule)).BeginInit();
@@ -69,6 +65,17 @@ namespace QuanlyTrungTam
             this.Scores_Button.TabIndex = 9;
             this.Scores_Button.Text = "Nhập điểm";
             this.Scores_Button.UseVisualStyleBackColor = false;
+            this.Scores_Button.Click += new System.EventHandler(this.Scores_Button_Click);
+            // 
+            // Scores
+            // 
+            this.Scores.Image = global::QuanlyTrungTam.Properties.Resources.score_input;
+            this.Scores.Location = new System.Drawing.Point(449, 11);
+            this.Scores.Name = "Scores";
+            this.Scores.Size = new System.Drawing.Size(52, 57);
+            this.Scores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Scores.TabIndex = 6;
+            this.Scores.TabStop = false;
             // 
             // Schedule_Button
             // 
@@ -81,16 +88,7 @@ namespace QuanlyTrungTam
             this.Schedule_Button.TabIndex = 5;
             this.Schedule_Button.Text = "Thời khóa biểu";
             this.Schedule_Button.UseVisualStyleBackColor = false;
-            // 
-            // Scores
-            // 
-            this.Scores.Image = global::QuanlyTrungTam.Properties.Resources.score_input;
-            this.Scores.Location = new System.Drawing.Point(449, 11);
-            this.Scores.Name = "Scores";
-            this.Scores.Size = new System.Drawing.Size(52, 57);
-            this.Scores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Scores.TabIndex = 6;
-            this.Scores.TabStop = false;
+            this.Schedule_Button.Click += new System.EventHandler(this.Schedule_Button_Click);
             // 
             // Schedule
             // 
@@ -117,36 +115,11 @@ namespace QuanlyTrungTam
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SubjectCode,
-            this.Subject_Name,
-            this.Subject_Time,
-            this.Number_Subject});
             this.dataGridView1.Location = new System.Drawing.Point(152, 143);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(450, 295);
             this.dataGridView1.TabIndex = 41;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
-            // SubjectCode
-            // 
-            this.SubjectCode.HeaderText = "Mã Môn";
-            this.SubjectCode.Name = "SubjectCode";
-            // 
-            // Subject_Name
-            // 
-            this.Subject_Name.HeaderText = "Tên Môn";
-            this.Subject_Name.Name = "Subject_Name";
-            // 
-            // Subject_Time
-            // 
-            this.Subject_Time.HeaderText = "Thời Gian";
-            this.Subject_Time.Name = "Subject_Time";
-            // 
-            // Number_Subject
-            // 
-            this.Number_Subject.HeaderText = "Số Tín Chỉ";
-            this.Number_Subject.Name = "Number_Subject";
             // 
             // Teacher_Calendar
             // 
@@ -176,9 +149,5 @@ namespace QuanlyTrungTam
         private System.Windows.Forms.PictureBox Schedule;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SubjectCode;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Subject_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Subject_Time;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Number_Subject;
     }
 }

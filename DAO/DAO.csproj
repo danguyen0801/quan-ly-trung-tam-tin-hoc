@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataProvider.cs" />
     <Compile Include="DBConnect.cs" />
     <Compile Include="dbConnectionData.cs" />
     <Compile Include="DB_BANGDIEM.cs" />

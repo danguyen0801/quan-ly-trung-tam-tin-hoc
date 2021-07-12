@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_LOPCHUYENDE
+    public class DTO_LOPCHUYENDE
     {
+        public string MaLopCD;
+        public string MaCDc;
+        public string TenLopCD;
+        public string MaGV;
+        public int SiSo;
+        public DateTime ThoiGianHoc;
     }
 }

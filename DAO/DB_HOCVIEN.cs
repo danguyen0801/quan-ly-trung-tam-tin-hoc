@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using DTO;
+using Dapper;
+
 
 namespace DAO
 {
     public class DB_HOCVIEN
     {
+
         public static DataTable getData()
         {
             SqlConnection conn = dbConnectionData.HamKetNoi();
@@ -39,17 +42,51 @@ namespace DAO
             command.Parameters.Add("@Email", SqlDbType.NVarChar, 50);
             command.Parameters.Add("@NgaySinh", SqlDbType.Date);
             command.Parameters.Add("@DiemThiTN", SqlDbType.Int);
-            command.Parameters["@MaHV"].Value = hv.MaHV1;
-            command.Parameters["@TenHV"].Value = hv.TenHV1;
-            command.Parameters["@GioiTinh"].Value = hv.GioiTinh1;
-            command.Parameters["@SDT"].Value = hv.SDT1;
-            command.Parameters["@Email"].Value = hv.Email1;
-            command.Parameters["@NgaySinh"].Value = hv.NgaySinh1;
-            command.Parameters["@DiemThiTN"].Value = hv.DiemThiTN1;
+            command.Parameters["@MaHV"].Value = hv.MaHV;
+            command.Parameters["@TenHV"].Value = hv.HoTenHV;
+            command.Parameters["@GioiTinh"].Value = hv.Gioitinh;
+            command.Parameters["@SDT"].Value = hv.SDT;
+            command.Parameters["@Email"].Value = hv.Email;
+            command.Parameters["@NgaySinh"].Value = hv.ngaySinh.ToString();
+            command.Parameters["@DiemThiTN"].Value = hv.DiemThiTotNghiep;
 
             conn.Open();
             command.ExecuteNonQuery();
             conn.Close();
         }
+
+        public string Them(DTO_HOCVIEN hv)
+        {
+
+            string t = "insert into HocVien values('" + hv.MaHV + "',N'" + hv.HoTenHV + "',N'" + hv.Gioitinh + "','" + hv.SDT + "','" + hv.Email + "','" + hv.ngaySinh + "',0)";
+            DataProvider.Instance.ExecuteNonQuery(t);
+            return hv.MaHV;
+        }
+        public DataTable KiemtraMaSo(string MaHV)
+        {
+            string t = "select MAHV from HOCVIEN where MaHV='" + MaHV + "'";
+            return DataProvider.Instance.ExecuteQuery(t);
+        }
+
+
+        public static List<DTO_HOCVIEN> DsHocVien()
+        {
+            DBConnect _dbContext = new DBConnect();
+            using (IDbConnection _dbConnection = _dbContext.CreateConnection())
+            {
+                var output = _dbConnection.Query<DTO_HOCVIEN>($"select * from HOCVIEN").ToList();
+                return output;
+            }
+        }
+        public static void updateHocVien(DTO_HOCVIEN hv)
+        {
+            DBConnect _dbContext = new DBConnect();
+            using (IDbConnection _dbConnection = _dbContext.CreateConnection())
+            {
+                var output = _dbConnection.Query<DTO_HOCVIEN>($"UPDATE HOCVIEN SET HOTENHV=N'{hv.HoTenHV}', GIOITINH=N'{hv.Gioitinh}', SDT='{hv.SDT}', EMAIL='{hv.Email}', NGAYSINH='{hv.ngaySinh}' WHERE MAHV='{hv.MaHV}'");
+            }
+        }
     }
-}
+        }
+       
+            

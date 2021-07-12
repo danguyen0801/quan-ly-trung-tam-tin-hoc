@@ -9,7 +9,7 @@ namespace DAO
     {
         public static SqlConnection HamKetNoi()
         {
-            SqlConnection Conn = new SqlConnection(@"Data Source=DESKTOP-PROSD3Q\SQLEXPRESS;Initial Catalog=QUANLITRUNGTAMTINHOC;Integrated Security=True");
+            SqlConnection Conn = new SqlConnection(@"Data Source=THAOTRUONG\SQL;Initial Catalog=QUANLITRUNGTAMTINHOC;Integrated Security=True");
             return Conn;
         }
     }
