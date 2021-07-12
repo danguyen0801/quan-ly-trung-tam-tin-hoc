@@ -14,5 +14,15 @@ namespace QuanlyTrungTam.BUS
         {
             return DB_BANGDIEM.getData();
         }
+        public void Dangkithillai(string MaHV)
+        {
+            DB_BANGDIEM bd = new DB_BANGDIEM();
+            bd.Capnhatlanthi(MaHV);
+        }
+        public DataTable Dsmonkhongdat(string MaHV)
+        {
+            DB_BANGDIEM dbbd = new DB_BANGDIEM();
+            return dbbd.dskhongdat(MaHV);
+        }
     }
 }

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using DTO;
-
 namespace DAO
 {
     public class DB_BANGDIEM
     {
+
         public static DataTable getData()
         {
             SqlConnection conn = dbConnectionData.HamKetNoi();
@@ -27,5 +27,17 @@ namespace DAO
             conn.Close();
             return dt;
         }
+
+        public void Capnhatlanthi(string MaHV)
+        {
+            string t = "update LICHTHI set Solanthi=2 where MaHV='" + MaHV + "'";
+        }
+        public DataTable dskhongdat(string MaHV)
+        {
+            string t = "select * from BANGDIEM where MaHV='" + MaHV + "' and diem<5";
+            return DataProvider.Instance.ExecuteQuery(t);
+        }
+
+
     }
 }

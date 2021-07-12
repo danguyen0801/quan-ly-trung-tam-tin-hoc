@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_GIANGVIEN
+    public class DTO_GIANGVIEN
     {
+        public string MaNV;
+        public string TenNV;
+        public string SDT;
+        public string Email;
     }
 }

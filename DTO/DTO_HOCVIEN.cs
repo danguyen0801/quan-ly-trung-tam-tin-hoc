@@ -8,13 +8,14 @@ namespace DTO
 {
     public class DTO_HOCVIEN
     {
-        private string MaHV;
-        private string TenHV;
-        private string GioiTinh;
-        private string SDT;
-        private string Email;
-        private DateTime NgaySinh;       
-        private int DiemThiTN;
+//<<<<<<< HEAD
+//        private string MaHV;
+//        private string TenHV;
+//        private string GioiTinh;
+//        private string SDT;
+//        private string Email;
+//        private DateTime NgaySinh;       
+//        private int DiemThiTN;
 
         public DTO_HOCVIEN(string maHV, string tenHV, string gioiTinh, string sDT, string email, DateTime ngaySinh, int diemThiTN)
         {
@@ -34,5 +35,16 @@ namespace DTO
         public string Email1 { get => Email; set => Email = value; }
         public DateTime NgaySinh1 { get => NgaySinh; set => NgaySinh = value; }
         public int DiemThiTN1 { get => DiemThiTN; set => DiemThiTN = value; }
+
+        public string MaHV;
+        public string HoTen;
+        public string Gioitinh;
+        public string SDT;
+        public string Email;
+        public string NgaySinh;
+        public int Diemthitotnghiep;
+       
+        public string MaHV1 { get => MaHV; set => MaHV = value; }
+
     }
 }

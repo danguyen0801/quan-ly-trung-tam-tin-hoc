@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+
 using System.Data.SqlClient;
 using DTO;
-
 namespace DAO
 {
     public class DB_PHIEUHOCPHI
     {
+
         public static DataTable getData()
         {
             SqlConnection conn = dbConnectionData.HamKetNoi();
@@ -26,6 +27,16 @@ namespace DAO
             da.Fill(dt);
             conn.Close();
             return dt;
+        }
+        public DataTable select(string Maphieu)
+        {
+            return DataProvider.Instance.ExecuteQuery("select * PHIEUHOCPHI where Maphieu='" + Maphieu + "'");
+        }
+        public void Capnhat(string Maphieu,string MaNV)
+        {
+            string t = "update PHIEUHOCPHI set MaNV='" + MaNV + "' where Maphieu='" + Maphieu + "'";
+            DataProvider.Instance.ExecuteNonQuery(t);
+
         }
     }
 }

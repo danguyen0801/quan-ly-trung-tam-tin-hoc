@@ -8,11 +8,7 @@ namespace DTO
 {
     public class DTO_BANGDIEM
     {
-        private string MaHV;
-        private string MaMonHoc;
-        private int Diem;
-        private bool IsPass;      
-        private int SoLanthi;
+
 
         public DTO_BANGDIEM(string maHV, string maMonHoc, int diem, bool isPass, int soLanthi)
         {
@@ -28,5 +24,12 @@ namespace DTO
         public int Diem1 { get => Diem; set => Diem = value; }
         public bool IsPass1 { get => IsPass; set => IsPass = value; }
         public int SoLanthi1 { get => SoLanthi; set => SoLanthi = value; }
+
+        public string MaHV;
+        public string Mamonhoc;
+        public int Diem;
+        public Boolean Ispass;
+        public int Solanthi;
+
     }
 }

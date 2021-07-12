@@ -15,15 +15,7 @@ namespace DTO
         private int SiSo;
         private DateTime ThoiGianHoc;
 
-        public DTO_LOPHOCPHAN(string maLopHP, string maMonHoc, string tenLopHP, string maGV, int siSo, DateTime thoiGianHoc)
-        {
-            MaLopHP = maLopHP;
-            MaMonHoc = maMonHoc;
-            TenLopHP = tenLopHP;
-            MaGV = maGV;
-            SiSo = siSo;
-            ThoiGianHoc = thoiGianHoc;
-        }
+        
 
         public string MaLopHP1 { get => MaLopHP; set => MaLopHP = value; }
         public string MaMonHoc1 { get => MaMonHoc; set => MaMonHoc = value; }

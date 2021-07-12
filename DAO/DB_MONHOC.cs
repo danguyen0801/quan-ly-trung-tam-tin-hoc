@@ -4,13 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+
 using System.Data.SqlClient;
 using DTO;
+
 
 namespace DAO
 {
     public class DB_MONHOC
     {
+
         public static DataTable getData()
         {
             SqlConnection conn = dbConnectionData.HamKetNoi();
@@ -26,6 +29,12 @@ namespace DAO
             da.Fill(dt);
             conn.Close();
             return dt;
+        }
+
+        public DataTable TimMaMonHoc(string MaNhomHP)
+        {
+            string t = "select MaMonHoc from Monhoc where MaNhomHP='"+MaNhomHP+"'";
+            return DataProvider.Instance.ExecuteQuery(t);
         }
     }
 }

@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
+using BUS;
 namespace QuanlyTrungTam
 {
     public partial class Login : Form
@@ -16,40 +17,36 @@ namespace QuanlyTrungTam
         {
             InitializeComponent();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        
+        private void signIn_Button_Click(object sender, EventArgs e)
         {
+            BUS.LOGIN lg = new BUS.LOGIN();
+            string t = lg.con(txbUserName.Text.ToString(), txbPassword.Text.ToString());
+            if (t == "Học viên")
+            {
+                Student st = new Student();
+                st.hv.MaHV = txbUserName.Text.ToString();
+                st.Show();
+                this.Hide();
+            }
+            else if (t == "Giáo vụ")
+            {
 
-        }
+                Teaching_staff ts = new Teaching_staff();
 
-        private void Login_Load(object sender, EventArgs e)
-        {
+                ts.nv.MaNV = txbUserName.Text.ToString();
+                ts.Show();
+                this.Hide();
 
-        }
-
-        private void signIn_Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txbPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txbUserName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            }
+            else if (t == "Giảng viên")
+            {
+                Teacher tc = new Teacher();
+                tc.gv.MaNV = txbUserName.Text.ToString();
+                tc.Show();
+                this.Hide();
+            }
+            
         }
     }
 }

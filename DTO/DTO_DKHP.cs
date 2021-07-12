@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class DTO_DKHP
+
+    public class DTO_DKHP
     {
+        public string MaHV;
+        public string MAlopHP;
+        public string Thoigiandk;
     }
 }
