@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using DAO;
 using DTO;
+using BUS;
 using System.Data;
-namespace QuanlyTrungTam.BUS
+namespace BUS
 {
     public class DKHP
     {
@@ -14,7 +15,7 @@ namespace QuanlyTrungTam.BUS
         public int Dangki()
         {
             LOPHOCPHAN lhp = new LOPHOCPHAN();
-            lhp.lhp.MaLopHP1 = dkhp.MAlopHP;
+            lhp.lhp.MaLopHP = dkhp.MAlopHP;
             if (lhp.TinhSiSo() < 30)
             {
                 int n = this.Kiemtra();

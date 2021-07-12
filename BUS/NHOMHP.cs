@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using DAO;
-namespace QuanlyTrungTam.BUS
+namespace BUS
 
 {
     public class NHOMHP
@@ -16,4 +16,4 @@ namespace QuanlyTrungTam.BUS
             return dbnhp.MaNhomHP();
         }
     }
-} }
+} 

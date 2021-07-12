@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-
             this.button1 = new System.Windows.Forms.Button();
-
             this.Inf_Student_Button = new System.Windows.Forms.Button();
             this.Semester_Button = new System.Windows.Forms.Button();
             this.TCTT_Button = new System.Windows.Forms.Button();
@@ -39,6 +37,7 @@
             this.DKTL_Button = new System.Windows.Forms.Button();
             this.Register_Button = new System.Windows.Forms.Button();
             this.logo = new System.Windows.Forms.PictureBox();
+            this.logout_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
@@ -46,6 +45,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Controls.Add(this.logout_button);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.Inf_Student_Button);
             this.panel1.Controls.Add(this.Semester_Button);
@@ -57,12 +57,11 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(866, 475);
             this.panel1.TabIndex = 2;
             // 
-
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DarkCyan;
@@ -70,7 +69,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(323, 266);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 187);
             this.button1.TabIndex = 7;
@@ -79,7 +78,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-
             // Inf_Student_Button
             // 
             this.Inf_Student_Button.BackColor = System.Drawing.Color.DarkCyan;
@@ -87,7 +85,7 @@
             this.Inf_Student_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Inf_Student_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Inf_Student_Button.Location = new System.Drawing.Point(503, 34);
-            this.Inf_Student_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Inf_Student_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Inf_Student_Button.Name = "Inf_Student_Button";
             this.Inf_Student_Button.Size = new System.Drawing.Size(142, 198);
             this.Inf_Student_Button.TabIndex = 6;
@@ -102,10 +100,8 @@
             this.Semester_Button.BackgroundImage = global::QuanlyTrungTam.Properties.Resources.semester;
             this.Semester_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Semester_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-            this.Semester_Button.Location = new System.Drawing.Point(417, 266);
-
-            this.Semester_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Semester_Button.Location = new System.Drawing.Point(469, 266);
+            this.Semester_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Semester_Button.Name = "Semester_Button";
             this.Semester_Button.Size = new System.Drawing.Size(131, 187);
             this.Semester_Button.TabIndex = 5;
@@ -121,7 +117,7 @@
             this.TCTT_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.TCTT_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TCTT_Button.Location = new System.Drawing.Point(674, 34);
-            this.TCTT_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TCTT_Button.Margin = new System.Windows.Forms.Padding(2);
             this.TCTT_Button.Name = "TCTT_Button";
             this.TCTT_Button.Size = new System.Drawing.Size(154, 198);
             this.TCTT_Button.TabIndex = 4;
@@ -148,10 +144,8 @@
             this.DKTL_Button.BackgroundImage = global::QuanlyTrungTam.Properties.Resources.licensing;
             this.DKTL_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DKTL_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
             this.DKTL_Button.Location = new System.Drawing.Point(614, 266);
-
-            this.DKTL_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DKTL_Button.Margin = new System.Windows.Forms.Padding(2);
             this.DKTL_Button.Name = "DKTL_Button";
             this.DKTL_Button.Size = new System.Drawing.Size(140, 187);
             this.DKTL_Button.TabIndex = 2;
@@ -167,7 +161,7 @@
             this.Register_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Register_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Register_Button.Location = new System.Drawing.Point(309, 34);
-            this.Register_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Register_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Register_Button.Name = "Register_Button";
             this.Register_Button.Size = new System.Drawing.Size(160, 198);
             this.Register_Button.TabIndex = 1;
@@ -181,12 +175,22 @@
             this.logo.Dock = System.Windows.Forms.DockStyle.Left;
             this.logo.Image = global::QuanlyTrungTam.Properties.Resources.teaching_staff;
             this.logo.Location = new System.Drawing.Point(0, 0);
-            this.logo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logo.Margin = new System.Windows.Forms.Padding(2);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(276, 475);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo.TabIndex = 0;
             this.logo.TabStop = false;
+            // 
+            // logout_button
+            // 
+            this.logout_button.Location = new System.Drawing.Point(759, 437);
+            this.logout_button.Name = "logout_button";
+            this.logout_button.Size = new System.Drawing.Size(108, 38);
+            this.logout_button.TabIndex = 8;
+            this.logout_button.Text = "Đăng xuất";
+            this.logout_button.UseVisualStyleBackColor = true;
+            this.logout_button.Click += new System.EventHandler(this.logout_button_Click);
             // 
             // Teaching_staff
             // 
@@ -194,7 +198,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(866, 475);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Teaching_staff";
             this.Text = "Teaching_staff";
             this.panel1.ResumeLayout(false);
@@ -215,5 +219,6 @@
         private System.Windows.Forms.Button Inf_Student_Button;
         private System.Windows.Forms.Button Semester_Button;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button logout_button;
     }
 }

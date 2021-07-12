@@ -17,6 +17,16 @@ namespace QuanlyTrungTam
         LOPHOCPHAN _busLopHocPhan = new LOPHOCPHAN();
         
         List<DTO_LOPHOCPHAN> listHP;
+        public DTO_GIANGVIEN gv = new DTO_GIANGVIEN();
+
+        public Teacher_Calendar(string maNV)
+        {
+
+            InitializeComponent();
+            gv.MaNV = maNV;
+            HienThi();
+
+        }
         public Teacher_Calendar()
         {
             InitializeComponent();
@@ -25,7 +35,8 @@ namespace QuanlyTrungTam
         }
         public void HienThi()
         {
-            listHP = _busLopHocPhan.DSLopHPTheoMaGV("GV 06");
+           
+            listHP = _busLopHocPhan.DSLopHPTheoMaGV(gv.MaNV);
             DataTable dt = new DataTable();
             dataGridView1.DataSource = listHP;
         }
@@ -52,10 +63,11 @@ namespace QuanlyTrungTam
 
         private void Scores_Button_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var form2 = new Teacher_Point();
-            form2.Closed += (s, args) => this.Close();
+            
+            var form2 = new Teacher_Point(gv.MaNV);
+            
             form2.Show();
+            this.Close();
         }
     }
 }

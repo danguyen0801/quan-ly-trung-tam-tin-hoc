@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
-using QuanlyTrungTam.BUS;
+using BUS;
+
 
 namespace QuanlyTrungTam
 {

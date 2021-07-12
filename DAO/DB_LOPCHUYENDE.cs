@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using System.Data.SqlClient;
+using DTO;
+using Dapper;
+using System.Windows.Forms;
 namespace DAO
 {
-    public class DB_LOPCHUYENDE
+    public class DB_LOPCHUYENDE:DBConnect
     {
         public DataTable TimLopchuyende(string[] MaCD)
         {
@@ -27,10 +31,19 @@ namespace DAO
             }
             return tb;
         }
-        public DataTable Tinhsiso(string MaLCD)
+        public List<DTO_LOPCHUYENDE> Tinhsiso(string MaLCD)
         {
-            string t = "select SiSo from LOPCHUYENDE where MaLopCD='" + MaLCD + "'";
-            return DataProvider.Instance.ExecuteQuery(t);
+            DBConnect _dbContext = new DBConnect();
+            using (IDbConnection _dbConnection = _dbContext.CreateConnection())
+            {
+                var output = _dbConnection.Query<DTO_LOPCHUYENDE>($"select * from LOPCHUYENDE where MaLopCD='" + MaLCD + "'").ToList();
+                MessageBox.Show("select * from LOPCHUYENDE where MaLopCD='" + MaLCD + "'");
+                return output;
+            }
+
+
+            //string t = "select SiSo from LOPCHUYENDE where MaLopCD='" + MaLCD + "'";
+            //return DataProvider.Instance.ExecuteQuery(t);
         }
     }
 }

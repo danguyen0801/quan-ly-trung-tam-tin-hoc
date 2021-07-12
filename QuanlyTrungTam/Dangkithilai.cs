@@ -13,6 +13,11 @@ namespace QuanlyTrungTam
 {
     public partial class Dangkithilai : Form
     {
+        public Dangkithilai(string maHV)
+        {
+            InitializeComponent();
+            hv.MaHV = maHV;
+        }
         public Dangkithilai()
         {
             InitializeComponent();
@@ -20,7 +25,7 @@ namespace QuanlyTrungTam
         public DTO_HOCVIEN hv = new DTO_HOCVIEN();
         private void bXem_Click(object sender, EventArgs e)
         {
-            BUS.LICHTHI lt = new BUS.LICHTHI();
+            LICHTHI lt = new LICHTHI();
             DataTable tb = lt.dslich(hv.MaHV);
             if (tb.Rows.Count == 0)
                 MessageBox.Show("Thi sinh khong co mon de thi lai");
@@ -36,7 +41,7 @@ namespace QuanlyTrungTam
             }
             else
             {
-                BUS.BANGDIEM bbd = new BUS.BANGDIEM();
+                BANGDIEM bbd = new BANGDIEM();
                 bbd.Dangkithillai(hv.MaHV);
                 MessageBox.Show("đã đăng kí thành công");
             }    

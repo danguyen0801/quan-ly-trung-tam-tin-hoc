@@ -6,16 +6,27 @@ using System.Threading.Tasks;
 using System.Data;
 using DTO;
 using DAO;
-namespace QuanlyTrungTam.BUS
+
+namespace BUS
 
 {
     public class DKCHUYENDE
     {
-        public DTO_DKCHUYENDE dkcd = new DTO_DKCHUYENDE();
+        public DTO_DKCHUYENDE dkcd = new DTO_DKCHUYENDE(); 
+        public DKCHUYENDE()
+        {
+
+        }
+        public DKCHUYENDE(string maHv,string maLop)
+        {
+            dkcd.MaHV = maHv;
+            dkcd.MAlopCD = maLop;
+        }
         public int Dangki()
         {
-            LOPCHUYENDE lcd = new LOPCHUYENDE();
-            lcd.lcd.MaLopCD = dkcd.MAlopCD;
+            LOPCHUYENDE lcd = new LOPCHUYENDE(dkcd.MAlopCD);
+            
+            
             if (lcd.TinhSiSo() < 30)
             {
                 int n = this.Kiemtra();

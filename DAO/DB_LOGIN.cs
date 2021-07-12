@@ -13,7 +13,7 @@ namespace DAO
         public DataTable connect(string acc,string pass)
         {
             string t = "select * from logintable where taikhoan='" + acc + "' and pass='" + pass + "'";
-            MessageBox.Show(t);
+           
             return DataProvider.Instance.ExecuteQuery(t);
         }
     }

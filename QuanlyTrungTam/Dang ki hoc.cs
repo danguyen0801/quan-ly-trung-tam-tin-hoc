@@ -26,7 +26,7 @@ namespace QuanlyTrungTam
             string Email = tEmail.Text.ToString();
             DateTime datetime = dtpNgaysinh.Value;
             string NgaySinh = datetime.Date.ToString();
-            BUS.HOCVIEN hv = new BUS.HOCVIEN();
+            HOCVIEN hv = new HOCVIEN();
             hv.hv.Khoitao(MaHV, Hoten, Gioitinh, sdt, Email, NgaySinh);
             if (hv.KiemtraMaSo() == true)
             {

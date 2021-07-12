@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using DTO;
 using DAO;
-namespace QuanlyTrungTam.BUS
+namespace BUS
 
 {
     public class CHUYENDE

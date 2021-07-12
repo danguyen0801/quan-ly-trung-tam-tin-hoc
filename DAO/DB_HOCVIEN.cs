@@ -58,7 +58,7 @@ namespace DAO
         public string Them(DTO_HOCVIEN hv)
         {
 
-            string t = "insert into HocVien values('" + hv.MaHV + "',N'" + hv.HoTen + "',N'" + hv.Gioitinh + "','" + hv.SDT + "','" + hv.Email + "','" + hv.ngaySinh + "',0)";
+            string t = "insert into HocVien values('" + hv.MaHV + "',N'" + hv.HoTenHV + "',N'" + hv.Gioitinh + "','" + hv.SDT + "','" + hv.Email + "','" + hv.ngaySinh + "',0)";
             DataProvider.Instance.ExecuteNonQuery(t);
             return hv.MaHV;
         }
@@ -84,9 +84,6 @@ namespace DAO
             using (IDbConnection _dbConnection = _dbContext.CreateConnection())
             {
                 var output = _dbConnection.Query<DTO_HOCVIEN>($"UPDATE HOCVIEN SET HOTENHV=N'{hv.HoTenHV}', GIOITINH=N'{hv.Gioitinh}', SDT='{hv.SDT}', EMAIL='{hv.Email}', NGAYSINH='{hv.ngaySinh}' WHERE MAHV='{hv.MaHV}'");
-
-
-
             }
         }
     }

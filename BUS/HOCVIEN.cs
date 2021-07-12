@@ -8,7 +8,7 @@ using DTO;
 using System.Data;
 
 
-namespace QuanlyTrungTam.BUS
+namespace BUS
 {
     public class HOCVIEN
     {
@@ -38,7 +38,7 @@ namespace QuanlyTrungTam.BUS
         }
 
         public  List<DTO_HOCVIEN> DsHocVien()
-        {
+        {   
             return DB_HOCVIEN.DsHocVien();
         }
         public void updateHocVien(DTO_HOCVIEN hv)

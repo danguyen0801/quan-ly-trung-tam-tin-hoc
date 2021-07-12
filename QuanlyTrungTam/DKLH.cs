@@ -7,13 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanlyTrungTam.BUS;
+using BUS;
 using DTO;
 namespace QuanlyTrungTam
 {
     public partial class DKLH : Form
     {
         public DTO_HOCVIEN hv = new DTO_HOCVIEN();
+        DKHP bus_DKHP = new DKHP();
+        public DKLH(string maHV)
+        {
+            InitializeComponent();
+            hv.MaHV = maHV;
+        }
         public DKLH()
         {
             InitializeComponent();
@@ -21,6 +27,8 @@ namespace QuanlyTrungTam
 
         private void DKLH_Load(object sender, EventArgs e)
         {
+            ////MessageBox.Show(hv.MaHV);
+            //dataGridView1.DataSource = bus_DKHP.dslopdk(hv.MaHV);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,12 +36,12 @@ namespace QuanlyTrungTam
             
             if(cbbLoaidaotao.Text.ToString()=="Chuyên đề")
             {
-                QuanlyTrungTam.BUS.LOPCHUYENDE lcd = new LOPCHUYENDE();
+                LOPCHUYENDE lcd = new LOPCHUYENDE();
                 dataGridView1.DataSource = lcd.TimlopCD(cbbNhom.Text.ToString());
             }
             else
             {
-                QuanlyTrungTam.BUS.LOPHOCPHAN lhp = new LOPHOCPHAN();
+                LOPHOCPHAN lhp = new LOPHOCPHAN();
                 dataGridView1.DataSource = lhp.timLopHocPhan(cbbNhom.Text.ToString());
             }    
         }
@@ -59,9 +67,7 @@ namespace QuanlyTrungTam
         {
             if(cbbLoaidaotao.Text=="Chuyên đề") 
             {
-                BUS.DKCHUYENDE dkcd = new DKCHUYENDE();
-                dkcd.dkcd.MaHV = hv.MaHV;
-                dkcd.dkcd.MAlopCD = tMalop.Text.ToString();
+                DKCHUYENDE dkcd = new DKCHUYENDE(hv.MaHV, tMalop.Text.ToString());
                 int n = dkcd.Dangki();
                 if (n == 1)
                     MessageBox.Show("đăng kí lớp học thành công");
@@ -77,7 +83,7 @@ namespace QuanlyTrungTam
             }
             else
             {
-                BUS.DKHP dkhp = new DKHP();
+                DKHP dkhp = new DKHP();
                 dkhp.dkhp.MaHV = hv.MaHV;
                 dkhp.dkhp.MAlopHP = tMalop.Text.ToString();
                 int n = dkhp.Dangki();

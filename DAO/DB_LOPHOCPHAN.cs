@@ -60,6 +60,7 @@ namespace DAO
             using (IDbConnection _dbConnection = _dbContext.CreateConnection())
             {
                 var output = _dbConnection.Query<DTO_LOPHOCPHAN>($"select * from LOPHOCPHAN where MAGV = '{maGV}'").ToList();
+                
                 return output;
             }
         }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
+//using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,6 +17,15 @@ namespace QuanlyTrungTam
         BANGDIEM _busBangDiem = new BANGDIEM();
         List<DTO_LOPHOCPHAN> listHP;
         List<DTO_BANGDIEM> listBangDiem;
+        public DTO_GIANGVIEN gv = new DTO_GIANGVIEN();
+        public Teacher_Point(string maNV)
+        {
+
+            InitializeComponent();
+            gv.MaNV = maNV;
+            HienThi();
+
+        }
         public Teacher_Point()
         {
             InitializeComponent();
@@ -25,8 +34,8 @@ namespace QuanlyTrungTam
         }
         public void HienThi()
         {
-            listHP = _busLopHocPhan.DSLopHPTheoMaGV("GV 06");
-            DataTable dt = new DataTable();
+            listHP = _busLopHocPhan.DSLopHPTheoMaGV(gv.MaNV);
+            
             dataGridView1.DataSource = listHP;
            
             update_button.Enabled = false;
@@ -57,10 +66,10 @@ namespace QuanlyTrungTam
 
         private void Schedule_Button_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var form2 = new Teacher_Calendar();
-            form2.Closed += (s, args) => this.Close();
+           
+            var form2 = new Teacher_Calendar(gv.MaNV);
             form2.Show();
+            this.Close();
         }
     }
 }

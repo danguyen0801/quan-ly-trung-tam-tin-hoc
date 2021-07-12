@@ -7,12 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanlyTrungTam.BUS;
-
+using DTO;
+using BUS;
 namespace QuanlyTrungTam
 {
     public partial class Inf_Check : Form
-    {
+    {   
+        public DTO_HOCVIEN hv = new DTO_HOCVIEN();
+        public Inf_Check(string maHV)
+        {
+            InitializeComponent();
+            hv.MaHV = maHV;
+            dataGridView1.DataSource = MONHOC.ThoiKhoaBieu();
+        }
         public Inf_Check()
         {
             InitializeComponent();

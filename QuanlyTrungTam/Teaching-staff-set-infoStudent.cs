@@ -27,8 +27,8 @@ namespace QuanlyTrungTam
         public void HienThi()
         {
             lstHocVien = _busHocVien.DsHocVien();
+            //MessageBox.Show(lstHocVien[7].HoTenHV);
             listStudent.DataSource = lstHocVien;
-            
         }
 
         private void Schedule_Button_Click(object sender, EventArgs e)
@@ -56,18 +56,7 @@ namespace QuanlyTrungTam
 
         }
 
-        private void listStudent_SelectionChanged(object sender, EventArgs e)
-        { hocVienChon = lstHocVien[listStudent.CurrentCell.RowIndex];
-          
-            txbHovaten.Text = hocVienChon.HoTenHV;
-            txbEmail.Text = hocVienChon.Email;
-            txbGioiTinh.Text = hocVienChon.GioiTinh;
-            txbNgaySinh.Text = hocVienChon.NgaySinh.ToString();
-            txbSĐT.Text = hocVienChon.SDT;
-            Return_Button.Enabled = true;
-            update_button.Enabled = true;
-        }
-
+     
         private void txbHovaten_TextChanged(object sender, EventArgs e)
         {
 
@@ -77,8 +66,8 @@ namespace QuanlyTrungTam
         {
             txbHovaten.Text = hocVienChon.HoTenHV;
             txbEmail.Text = hocVienChon.Email;
-            txbGioiTinh.Text = hocVienChon.GioiTinh;
-            txbNgaySinh.Text = hocVienChon.NgaySinh.ToString();
+            txbGioiTinh.Text = hocVienChon.Gioitinh;
+            txbNgaySinh.Text = hocVienChon.ngaySinh.ToString();
             txbSĐT.Text = hocVienChon.SDT;
         }
         private bool KTHopLe(DTO_HOCVIEN hv)
@@ -89,12 +78,25 @@ namespace QuanlyTrungTam
         {
              hocVienChon.HoTenHV= txbHovaten.Text;
             hocVienChon.Email = txbEmail.Text;
-            hocVienChon.GioiTinh = txbGioiTinh.Text;
-            hocVienChon.NgaySinh = DateTime.Parse(txbNgaySinh.Text);
+            hocVienChon.Gioitinh = txbGioiTinh.Text;
+            hocVienChon.ngaySinh = DateTime.Parse(txbNgaySinh.Text);
             hocVienChon.SDT = txbSĐT.Text;
             _busHocVien.updateHocVien(hocVienChon);
             MessageBox.Show("Cập nhật thông tin thành công!");
             HienThi();
+        }
+
+        private void listStudent_SelectionChanged_1(object sender, EventArgs e)
+        {
+            hocVienChon = lstHocVien[listStudent.CurrentCell.RowIndex];
+
+            txbHovaten.Text = hocVienChon.HoTenHV;
+            txbEmail.Text = hocVienChon.Email;
+            txbGioiTinh.Text = hocVienChon.Gioitinh;
+            txbNgaySinh.Text = hocVienChon.ngaySinh.ToString();
+            txbSĐT.Text = hocVienChon.SDT;
+            Return_Button.Enabled = true;
+            update_button.Enabled = true;
         }
     }
 }

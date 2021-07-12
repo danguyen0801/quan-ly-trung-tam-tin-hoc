@@ -7,9 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanlyTrungTam.BUS;
 using DTO;
-
+using BUS;
 namespace QuanlyTrungTam
 {
     public partial class ChungChiTinHoc : Form

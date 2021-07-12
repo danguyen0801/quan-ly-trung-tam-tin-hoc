@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanlyTrungTam.BUS;
-using DTO;
 
+using DTO;
+using BUS;
 namespace QuanlyTrungTam
 {
     public partial class Inf_Edit : Form

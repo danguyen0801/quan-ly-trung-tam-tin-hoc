@@ -8,7 +8,7 @@ using DTO;
 using System.Data;
 
 
-namespace QuanlyTrungTam.BUS
+namespace BUS
 {
     public class BANGDIEM {
         public static DataTable XemDiemThi()

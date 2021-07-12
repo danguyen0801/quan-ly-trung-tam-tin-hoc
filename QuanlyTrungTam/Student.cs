@@ -12,6 +12,12 @@ namespace QuanlyTrungTam
 {
     public partial class Student : Form
     {
+        public Student(string maHV)
+        {
+            
+            InitializeComponent();
+            hv.MaHV = maHV;
+        }
         public Student()
         {
             InitializeComponent();
@@ -20,8 +26,8 @@ namespace QuanlyTrungTam
 
         private void DKMH_Button_Click(object sender, EventArgs e)
         {
-            DKLH dklp = new DKLH();
-            dklp.hv.MaHV = hv.MaHV;
+            DKLH dklp = new DKLH(hv.MaHV);
+            
             dklp.Show();
         }
 
@@ -32,16 +38,25 @@ namespace QuanlyTrungTam
 
         private void DKTL_Button_Click(object sender, EventArgs e)
         {
-            Dangkithilai dk = new Dangkithilai();
-            dk.hv.MaHV = hv.MaHV;
+            Dangkithilai dk = new Dangkithilai(hv.MaHV);
+            
             dk.Show();
         }
         private void TCTT_Button_Click(object sender, EventArgs e)
         {
-            Inf_Check f = new Inf_Check();
+            Inf_Check f = new Inf_Check(hv.MaHV);
             this.Hide();
             f.ShowDialog();
             this.Show();
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            
+            login.Show();
+            this.Hide();
         }
     }
 }

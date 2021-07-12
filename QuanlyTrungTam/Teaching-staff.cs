@@ -13,6 +13,11 @@ namespace QuanlyTrungTam
     public partial class Teaching_staff : Form
     {
         public DTO_NVGIAOVU nv = new DTO_NVGIAOVU();
+        public Teaching_staff(string maNV)
+        { 
+            InitializeComponent();
+            nv.MaNV = maNV;
+        }
         public Teaching_staff()
         {
             InitializeComponent();
@@ -56,8 +61,16 @@ namespace QuanlyTrungTam
         }
         private void Inf_Student_Button_Click(object sender, EventArgs e)
         {
-            Application.Run(new Teaching_staff_set_infoStudent());
+            
+            Teaching_staff_set_infoStudent ts = new Teaching_staff_set_infoStudent();
+            ts.Show();
+        }
 
+        private void logout_button_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
         }
     }
 }

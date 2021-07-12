@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using DTO;
-using QuanlyTrungTam.BUS;
-
+using BUS;
 namespace QuanlyTrungTam
 {
     public partial class ChungChiCTDaoTao : Form

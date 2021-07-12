@@ -50,15 +50,15 @@ namespace DTO
         //public DateTime NgaySinh1 { get => ngaySinh; set => ngaySinh = value; }
         //public int DiemThiTN1 { get => DiemThiTN; set => DiemThiTN = value; }
 
-        public string MaHV;
-        public string HoTenHV;
-        public string Gioitinh;
-        public string SDT;
-        public string Email;
-        public DateTime ngaySinh;
-        public int DiemThiTotNghiep;
-       
-      
+        public string MaHV { get; set; }
+        public string HoTenHV { get; set; }
+        public string Gioitinh { get; set; }
+        public string SDT { get; set; }
+        public string Email { get; set; }
+        public DateTime ngaySinh { get; set; }
+        public int DiemThiTotNghiep { get; set; }
+
+
 
 
     }

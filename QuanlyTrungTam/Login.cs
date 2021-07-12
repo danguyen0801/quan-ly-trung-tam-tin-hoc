@@ -24,28 +24,26 @@ namespace QuanlyTrungTam
             string t = lg.con(txbUserName.Text.ToString(), txbPassword.Text.ToString());
             if (t == "Học viên")
             {
-                Student st = new Student();
-                st.hv.MaHV = txbUserName.Text.ToString();
+                Student st = new Student(txbUserName.Text.ToString());
                 st.Show();
                 this.Hide();
             }
             else if (t == "Giáo vụ")
             {
 
-                Teaching_staff ts = new Teaching_staff();
-
-                ts.nv.MaNV = txbUserName.Text.ToString();
+                Teaching_staff ts = new Teaching_staff(txbUserName.Text.ToString());
                 ts.Show();
                 this.Hide();
 
             }
             else if (t == "Giảng viên")
             {
-                Teacher tc = new Teacher();
-                tc.gv.MaNV = txbUserName.Text.ToString();
+                Teacher tc = new Teacher(txbUserName.Text.ToString());
+                //tc.gv.MaNV = txbUserName.Text.ToString();
                 tc.Show();
                 this.Hide();
             }
+            else MessageBox.Show(t);
             
         }
     }

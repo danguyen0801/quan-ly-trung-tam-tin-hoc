@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using DAO;
 using System.Data;
 
-namespace QuanlyTrungTam.BUS
+namespace BUS
 {
     public class LOGIN
     {
@@ -18,7 +18,7 @@ namespace QuanlyTrungTam.BUS
             {
                 return dt.Rows[0][2].ToString();
             }
-            return "ten tai khoan hoac mat khau sai, vui long thử lai";
+            return "Tên tài khoản hoặc mật khẩu sai, vui lòng thử lại!";
         }
     }
 }

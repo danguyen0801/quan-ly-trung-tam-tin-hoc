@@ -27,7 +27,8 @@ namespace DTO
             SiSo = siSo1;
             ThoiGianHoc = thoiGianHoc1;
         }
-        public DTO_LOPHOCPHAN() { };
+        public DTO_LOPHOCPHAN() {
+        }
 
 
         public string MaLopHP { get ; set ; }

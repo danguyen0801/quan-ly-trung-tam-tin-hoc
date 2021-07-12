@@ -6,16 +6,26 @@ using System.Threading.Tasks;
 using DAO;
 using DTO;
 using System.Data;
-namespace QuanlyTrungTam.BUS
+namespace BUS
 { 
     public class LOPCHUYENDE
     {
         public DTO_LOPCHUYENDE lcd = new DTO_LOPCHUYENDE();
+        public LOPCHUYENDE()
+        {
+
+        }
+        public LOPCHUYENDE(string maLop)
+        {
+            lcd.MaLopCD = maLop;
+        }
         public int TinhSiSo()
         {
             DB_LOPCHUYENDE dblhp = new DB_LOPCHUYENDE();
-            DataTable dt = dblhp.Tinhsiso(lcd.MaLopCD);
-            return Int32.Parse(dt.Rows[0][0].ToString());
+          
+                List<DTO_LOPCHUYENDE>lst= dblhp.Tinhsiso(lcd.MaLopCD);
+            return 0;
+            //return Int32.Parse(dt.Rows[0][0].ToString());
         }
         public DataTable TimlopCD(string MaNhomCD)
         {

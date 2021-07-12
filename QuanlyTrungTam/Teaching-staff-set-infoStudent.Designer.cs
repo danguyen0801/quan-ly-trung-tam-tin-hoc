@@ -234,11 +234,11 @@ namespace QuanlyTrungTam
             // listStudent
             // 
             this.listStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.listStudent.Location = new System.Drawing.Point(1, 40);
+            this.listStudent.Location = new System.Drawing.Point(3, 54);
             this.listStudent.Name = "listStudent";
-            this.listStudent.Size = new System.Drawing.Size(281, 311);
+            this.listStudent.Size = new System.Drawing.Size(279, 282);
             this.listStudent.TabIndex = 53;
-            this.listStudent.SelectionChanged += new System.EventHandler(this.listStudent_SelectionChanged);
+            this.listStudent.SelectionChanged += new System.EventHandler(this.listStudent_SelectionChanged_1);
             // 
             // label9
             // 

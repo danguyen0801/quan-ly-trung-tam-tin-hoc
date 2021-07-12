@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DAO;
 using DTO;
+using BUS;
 using System.Data;
 namespace BUS
 {
@@ -31,11 +32,11 @@ namespace BUS
         }
         public string[] Lophocphankhongdat(string MaHV)
         {
-            DB_BANGDIEM db = new DB_BANGDIEM();
-            DB_DKHP dk = new DB_DKHP();
+            BANGDIEM db = new BANGDIEM();
+            DKHP dk = new DKHP();
             string[] t = new string[100];
             int k = 0;
-            DataTable tb1 = db.dskhongdat(MaHV);
+            DataTable tb1 = db.Dsmonkhongdat(MaHV);
             DataTable tb2 = dk.dslopdk(MaHV);
             for(int i=0;i<tb1.Rows.Count;i++)
             {

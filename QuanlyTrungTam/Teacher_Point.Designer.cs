@@ -37,7 +37,6 @@ namespace QuanlyTrungTam
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.update_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.time = new System.Windows.Forms.TextBox();
@@ -46,6 +45,7 @@ namespace QuanlyTrungTam
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Scores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Schedule)).BeginInit();
@@ -160,15 +160,6 @@ namespace QuanlyTrungTam
             this.label9.Text = "DANH SÁCH LỚP";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 99);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(516, 203);
-            this.dataGridView2.TabIndex = 41;
-            this.dataGridView2.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellValueChanged);
-            // 
             // update_button
             // 
             this.update_button.AutoEllipsis = true;
@@ -243,6 +234,15 @@ namespace QuanlyTrungTam
             this.label1.Size = new System.Drawing.Size(41, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "LỚP ";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 99);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(516, 203);
+            this.dataGridView2.TabIndex = 41;
+            this.dataGridView2.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellValueChanged);
             // 
             // Teacher_Point
             // 

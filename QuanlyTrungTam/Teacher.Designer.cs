@@ -33,6 +33,7 @@
             this.Score_input_Button = new System.Windows.Forms.Button();
             this.Schedule_Button = new System.Windows.Forms.Button();
             this.logo = new System.Windows.Forms.PictureBox();
+            this.logout_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
@@ -40,6 +41,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Controls.Add(this.logout_button);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Score_input_Button);
             this.panel1.Controls.Add(this.Schedule_Button);
@@ -107,6 +109,16 @@
             this.logo.TabIndex = 0;
             this.logo.TabStop = false;
             // 
+            // logout_button
+            // 
+            this.logout_button.Location = new System.Drawing.Point(598, 316);
+            this.logout_button.Name = "logout_button";
+            this.logout_button.Size = new System.Drawing.Size(108, 38);
+            this.logout_button.TabIndex = 6;
+            this.logout_button.Text = "Đăng xuất";
+            this.logout_button.UseVisualStyleBackColor = true;
+            this.logout_button.Click += new System.EventHandler(this.logout_button_Click);
+            // 
             // Teacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -130,5 +142,6 @@
         private System.Windows.Forms.Button Score_input_Button;
         private System.Windows.Forms.Button Schedule_Button;
         private System.Windows.Forms.PictureBox logo;
+        private System.Windows.Forms.Button logout_button;
     }
 }
