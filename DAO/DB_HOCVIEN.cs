@@ -57,7 +57,7 @@ namespace DAO
         public string Them(DTO_HOCVIEN hv)
         {
 
-            string t = "insert into HocVien values('" + hv.MaHV + "',N'" + hv.HoTen + "',N'" + hv.Gioitinh + "','" + hv.SDT + "','" + hv.Email + "','" + hv.NgaySinh + "',0)";
+            string t = "insert into HocVien values('" + hv.MaHV + "',N'" + hv.HoTen + "',N'" + hv.Gioitinh + "','" + hv.SDT + "','" + hv.Email + "','" + hv.ngaySinh + "',0)";
             DataProvider.Instance.ExecuteNonQuery(t);
             return hv.MaHV;
         }

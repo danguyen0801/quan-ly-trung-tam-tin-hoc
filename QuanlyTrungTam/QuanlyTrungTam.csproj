@@ -66,6 +66,24 @@
     <Compile Include="ChungChiTinHoc.Designer.cs">
       <DependentUpon>ChungChiTinHoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dang ki hoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dang ki hoc.Designer.cs">
+      <DependentUpon>Dang ki hoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dangkithilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangkithilai.Designer.cs">
+      <DependentUpon>Dangkithilai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DKLH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DKLH.Designer.cs">
+      <DependentUpon>DKLH.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inf_Check.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,11 +164,26 @@
     <Compile Include="Teaching-staff.Designer.cs">
       <DependentUpon>Teaching-staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Thuhocphi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thuhocphi.Designer.cs">
+      <DependentUpon>Thuhocphi.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ChungChiCTDaoTao.resx">
       <DependentUpon>ChungChiCTDaoTao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChungChiTinHoc.resx">
       <DependentUpon>ChungChiTinHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dang ki hoc.resx">
+      <DependentUpon>Dang ki hoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangkithilai.resx">
+      <DependentUpon>Dangkithilai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DKLH.resx">
+      <DependentUpon>DKLH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inf_Check.resx">
       <DependentUpon>Inf_Check.cs</DependentUpon>
@@ -200,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Teaching-staff.resx">
       <DependentUpon>Teaching-staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thuhocphi.resx">
+      <DependentUpon>Thuhocphi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

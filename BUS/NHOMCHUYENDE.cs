@@ -9,7 +9,7 @@ using System.Data;
 namespace QuanlyTrungTam.BUS
 {
     public class NHOMCHUYENDE
-    {
+    {   
         public DTO_NHOMHOCPHAN nhp = new DTO_NHOMHOCPHAN();
         public DataTable MaNhom()
         {

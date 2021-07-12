@@ -11,6 +11,11 @@ namespace QuanlyTrungTam.BUS
     public class LOPHOCPHAN
     {
         public DTO_LOPHOCPHAN lhp = new DTO_LOPHOCPHAN();
+
+        public static DataTable GetAllLopHocPhan()
+        {
+            return DB_LOPHOCPHAN.getData();
+        }
         public int TinhSiSo()
         {
             DB_LOPHOCPHAN dblhp = new DB_LOPHOCPHAN();

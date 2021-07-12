@@ -58,6 +58,7 @@
     <Compile Include="DTO_LOPHOCPHAN.cs" />
     <Compile Include="DTO_MONHOC.cs" />
     <Compile Include="DTO_NHOMCHUYENDE.cs" />
+    <Compile Include="DTO_NHOMHOCPHAN.cs" />
     <Compile Include="DTO_NVGIAOVU.cs" />
     <Compile Include="DTO_PHIEUHOCPHI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

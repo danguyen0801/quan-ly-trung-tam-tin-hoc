@@ -21,7 +21,7 @@ namespace DTO
             MaLichThi = maLichThi;
             MalopHP = malopHP;
             PhongThi = phongThi;
-            TgThi = tgThi;
+            Thoigianthi = tgThi;
             MaNV = Manv;
         }
 
@@ -31,13 +31,13 @@ namespace DTO
 
         public string MalopHP1 { get => MalopHP; set => MalopHP = value; }
         public string PhongThi1 { get => PhongThi; set => PhongThi = value; }
-        public DateTime TgThi1 { get => TgThi; set => TgThi = value; }
+        public DateTime TgThi1 { get => Thoigianthi; set => Thoigianthi = value; }
         public string MaNV1 { get => MaNV; set => MaNV = value; }
 
-        public string Malichthi;
+        public string MaLichThi;
         public string MalopHP;
-        public string Phongthi;
-        public string Thoigianthi;
+        public string PhongThi;
+        public DateTime Thoigianthi;
         public string MaNV;
 
     }

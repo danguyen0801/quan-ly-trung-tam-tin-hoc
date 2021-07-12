@@ -20,7 +20,7 @@ namespace QuanlyTrungTam
             //Application.Run(new Login());
             //Application.Run(new Student());
 
-            Application.Run(new Student());
+            Application.Run(new Login());
 
         }
     }

@@ -39,5 +39,18 @@ namespace DAO
             string t = "select MalopHP from Lophocphan where MalopHP='" + MalopHP + "' and MaMonhoc='" + Monhoc + "'";
             return DataProvider.Instance.ExecuteQuery(t);
         }
+        public static DataTable getData()
+        {
+            SqlConnection Conn = dbConnectionData.HamKetNoi();
+            SqlCommand command = new SqlCommand("GetAllLopHocPhan", Conn);
+            command.CommandType = CommandType.StoredProcedure;
+            Conn.Open();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = command;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            Conn.Close();
+            return dt;
+        }
     }
 }

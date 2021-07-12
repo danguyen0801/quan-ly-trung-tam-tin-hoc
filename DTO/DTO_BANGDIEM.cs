@@ -26,10 +26,10 @@ namespace DTO
         public int SoLanthi1 { get => SoLanthi; set => SoLanthi = value; }
 
         public string MaHV;
-        public string Mamonhoc;
+        public string MaMonHoc;
         public int Diem;
-        public Boolean Ispass;
-        public int Solanthi;
+        public Boolean IsPass;
+        public int SoLanthi;
 
     }
 }
