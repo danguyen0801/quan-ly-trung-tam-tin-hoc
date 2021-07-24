@@ -37,6 +37,11 @@ namespace QuanlyTrungTam
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pointStudentSelected = new System.Windows.Forms.TextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.update_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.time = new System.Windows.Forms.TextBox();
@@ -45,7 +50,7 @@ namespace QuanlyTrungTam
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.idStudentSelected = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Scores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Schedule)).BeginInit();
@@ -127,6 +132,11 @@ namespace QuanlyTrungTam
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.idStudentSelected);
+            this.splitContainer1.Panel2.Controls.Add(this.label7);
+            this.splitContainer1.Panel2.Controls.Add(this.label6);
+            this.splitContainer1.Panel2.Controls.Add(this.label5);
+            this.splitContainer1.Panel2.Controls.Add(this.pointStudentSelected);
             this.splitContainer1.Panel2.Controls.Add(this.dataGridView2);
             this.splitContainer1.Panel2.Controls.Add(this.update_button);
             this.splitContainer1.Panel2.Controls.Add(this.label4);
@@ -159,6 +169,50 @@ namespace QuanlyTrungTam
             this.label9.TabIndex = 38;
             this.label9.Text = "DANH SÁCH LỚP";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(184, 318);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(31, 13);
+            this.label7.TabIndex = 46;
+            this.label7.Text = "Điểm";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(14, 314);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 13);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "Mã HV";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 43;
+            this.label5.Text = "label5";
+            // 
+            // pointStudentSelected
+            // 
+            this.pointStudentSelected.Location = new System.Drawing.Point(236, 311);
+            this.pointStudentSelected.Name = "pointStudentSelected";
+            this.pointStudentSelected.Size = new System.Drawing.Size(100, 20);
+            this.pointStudentSelected.TabIndex = 42;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 99);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(516, 203);
+            this.dataGridView2.TabIndex = 41;
+            this.dataGridView2.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellValueChanged);
+            this.dataGridView2.SelectionChanged += new System.EventHandler(this.dataGridView2_SelectionChanged);
             // 
             // update_button
             // 
@@ -235,14 +289,13 @@ namespace QuanlyTrungTam
             this.label1.TabIndex = 0;
             this.label1.Text = "LỚP ";
             // 
-            // dataGridView2
+            // idStudentSelected
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 99);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(516, 203);
-            this.dataGridView2.TabIndex = 41;
-            this.dataGridView2.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellValueChanged);
+            this.idStudentSelected.AutoSize = true;
+            this.idStudentSelected.Location = new System.Drawing.Point(83, 314);
+            this.idStudentSelected.Name = "idStudentSelected";
+            this.idStudentSelected.Size = new System.Drawing.Size(0, 13);
+            this.idStudentSelected.TabIndex = 47;
             // 
             // Teacher_Point
             // 
@@ -288,5 +341,10 @@ namespace QuanlyTrungTam
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox pointStudentSelected;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label idStudentSelected;
     }
 }

@@ -27,7 +27,23 @@ namespace DAO
             conn.Close();
             return dt;
         }
-             public static void InsertLichThi(DTO_LICHTHI lt)
+        public static DataTable getTBData()
+        {
+            SqlConnection conn = dbConnectionData.HamKetNoi();
+            SqlCommand command = new SqlCommand("sp_XemTBLichThi", conn);
+            command.CommandType = CommandType.StoredProcedure;
+
+            //command.Parameters.AddWithValue("@mahv", SqlDbType.NVarChar).Value = txbUserName.Text.Trim();
+            
+            conn.Open();
+            SqlDataAdapter da = new SqlDataAdapter();
+            da.SelectCommand = command;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conn.Close();
+            return dt;
+        }
+        public static void InsertLichThi(DTO_LICHTHI lt)
         {
             SqlConnection Conn = dbConnectionData.HamKetNoi();
             SqlCommand command = new SqlCommand("InsertLichThi", Conn);

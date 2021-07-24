@@ -17,6 +17,10 @@ namespace BUS
         {
             return DB_LICHTHI.getData();
 }
+        public static DataTable XemTBLichThi()
+        {
+            return DB_LICHTHI.getTBData();
+        }
         public static void InSertLichThi(DTO_LICHTHI lt)
         {
             DB_LICHTHI.InsertLichThi(lt);

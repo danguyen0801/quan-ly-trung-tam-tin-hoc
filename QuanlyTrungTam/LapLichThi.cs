@@ -21,8 +21,12 @@ namespace QuanlyTrungTam
         public LapLichThi()
         {
             InitializeComponent();
+            HienThi();
         }
-
+        public void HienThi()
+        {
+            dataGridView1.DataSource = LICHTHI.XemTBLichThi();
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
